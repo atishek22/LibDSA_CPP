@@ -1,10 +1,11 @@
 /**
  * @file sorting.hpp
  * @brief Sorting Algorithms.
- *
- * Details.
+ * @details Popular Sorting Algorithms using metaprogramming and comparison callback support.
+ * @author Atishek Kumar
+ * @date May 2021
+ * @warning Not thread safe and minimal error handling.
  */
-
 
 #ifndef ALGORITHMS_SORTING_HPP
 #define ALGORITHMS_SORTING_HPP
@@ -64,6 +65,20 @@ namespace sorting {
 template<typename T>
 extern int partition(std::vector<T> &v, std::function<bool(T,T)> compare, int low, int high);
 
+/**
+ * @brief Randomised Partition function for Randomised Quick Sort
+ *
+ * Selects a random pivot and partitions the array like partition(). 
+ * \f$O(n)\f$
+ *
+ * @tparam v reference to the vector
+ * @tparam compare comparison function
+ * @param low starting index of the subarray
+ * @param high ending index of the subarray
+ * @return index of the pivot after partition
+ */
+template<typename T>
+extern int randomisedPartition(std::vector<T> &v, std::function<bool(T,T)> compare, int low, int high);
 
 /*
  * Sorting Algorithms
@@ -75,7 +90,7 @@ extern int partition(std::vector<T> &v, std::function<bool(T,T)> compare, int lo
  * Insertion Sort implementation, ideal for a small number of elements,
  * increasing order by default. \f$O(n^2)\f$
  *
- * @tparam v Reference to the vector to be sorted
+ * @tparam v reference of the vector to be sorted
  * @tparam compare comparison function
  * @return none
  */
@@ -86,10 +101,10 @@ extern void insertionSort(std::vector<T> &v, std::function<bool(T, T)> compare =
 /**
  * @brief Merge Sort
  * 
- * Recursive implementation of the merge sort algorithms, increasing 
+ * Recursive implementation of the merge sort algorithm, increasing 
  * order by default. \f$O(n \log n)\f$
  *
- * @tparam v reference to the vector 
+ * @tparam v reference of the vector to be sorted
  * @tparam compare comparison function
  * @return none
  */
@@ -101,32 +116,39 @@ extern void mergeSort(std::vector<T> &v, std::function<bool(T, T)> compare = sor
  * @brief Heap Sort
  *
  * Sort the elements of a vector using the Heap Data Structure
- * increasing order by default
+ * increasing order by default. \f$O(n \log n)\f$
+
  *
- * @param Reference to the vector 
- * @param comparison function
- * @return nothing
+ * @tparam v reference of the vector to be sorted
+ * @tparam compare comparison function
+ * @return none
  */
 template<typename T>
 extern void heapSort(std::vector<T> &v, std::function<bool(T, T)> compare = sorting::increasingOrder<T>);
 
 
 /**
- * Quick Sort
+ * @brief Quick Sort
  *
- * @param Reference to the vector 
- * @param comparison function
- * @return nothing
+ * Quick Sort implementation, increasing order by default.
+ * \f$O(n \log n)\f$
+ *
+ * @tparam v reference of the vector to be sorted
+ * @tparam compare comparison function
+ * @return none
  */
 template<typename T>
 extern void quickSort(std::vector<T> &v, std::function<bool(T, T)> compare = sorting::increasingOrder<T>);
 
 /**
- * Randomised Quick Sort
+ * @brief Randomised Quick Sort
  *
- * @param Reference to the vector 
- * @param comparison function
- * @return nothing
+ * Randomised Quick Sort implementation using a randomised partition for 
+ * balanced partition and better performance than quickSort(). \f$O(n \log n)\f$
+ *
+ * @tparam v reference of the vector to be sorted
+ * @tparam compare comparison function
+ * @return none
  */
 template<typename T>
 extern void randomisedQuickSort(std::vector<T> &v, std::function<bool(T,T)> compare = sorting::increasingOrder<T>);

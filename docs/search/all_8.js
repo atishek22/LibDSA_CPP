@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['sorting_12',['sorting',['../namespacesorting.html',1,'']]],
-  ['sorting_2ehpp_13',['sorting.hpp',['../sorting_8hpp.html',1,'']]]
+  ['sorting_13',['sorting',['../namespacesorting.html',1,'']]],
+  ['sorting_2ehpp_14',['sorting.hpp',['../sorting_8hpp.html',1,'']]]
 ];

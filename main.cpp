@@ -13,7 +13,7 @@ int main() {
   for(int i = 0; i < 10; i++){
     v.push_back(i);
   }
-  quickSort(v, sorting::decreasingOrder<int>);
+  randomisedQuickSort(v, sorting::decreasingOrder<int>);
   for(int i = 0; i < 10; i++) {
     std::cout << v[i] << " ";
   }

@@ -100,6 +100,10 @@ Functions</h2></td></tr>
 <tr class="memitem:a13f0639535a4f11deaee14058848d44f"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="sorting_8hpp.html#a13f0639535a4f11deaee14058848d44f">partition</a> (std::vector&lt; T &gt; &amp;v, std::function&lt; bool(T, T)&gt; compare, int low, int high)</td></tr>
 <tr class="memdesc:a13f0639535a4f11deaee14058848d44f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Partition Function for Quick Sort.  <a href="sorting_8hpp.html#a13f0639535a4f11deaee14058848d44f">More...</a><br /></td></tr>
 <tr class="separator:a13f0639535a4f11deaee14058848d44f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4efff75a3b4beb4af0d919ec2677e90"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ad4efff75a3b4beb4af0d919ec2677e90"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="sorting_8hpp.html#ad4efff75a3b4beb4af0d919ec2677e90">randomisedPartition</a> (std::vector&lt; T &gt; &amp;v, std::function&lt; bool(T, T)&gt; compare, int low, int high)</td></tr>
+<tr class="memdesc:ad4efff75a3b4beb4af0d919ec2677e90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Randomised Partition function for Randomised Quick Sort.  <a href="sorting_8hpp.html#ad4efff75a3b4beb4af0d919ec2677e90">More...</a><br /></td></tr>
+<tr class="separator:ad4efff75a3b4beb4af0d919ec2677e90"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a11890b83f326e3a52513e4fe16686124"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a11890b83f326e3a52513e4fe16686124"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="sorting_8hpp.html#a11890b83f326e3a52513e4fe16686124">insertionSort</a> (std::vector&lt; T &gt; &amp;v, std::function&lt; bool(T, T)&gt; compare=<a class="el" href="namespacesorting.html#a7ac0db6b02621f8df053149ab1a3d755">sorting::increasingOrder</a>&lt; T &gt;)</td></tr>
 <tr class="memdesc:a11890b83f326e3a52513e4fe16686124"><td class="mdescLeft">&#160;</td><td class="mdescRight">Insertion Sort.  <a href="sorting_8hpp.html#a11890b83f326e3a52513e4fe16686124">More...</a><br /></td></tr>
@@ -114,9 +118,11 @@ Functions</h2></td></tr>
 <tr class="separator:a015779ec37ded61504f5d82616a15a74"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6f89630da43d212e293f8be9de864a00"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a6f89630da43d212e293f8be9de864a00"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="sorting_8hpp.html#a6f89630da43d212e293f8be9de864a00">quickSort</a> (std::vector&lt; T &gt; &amp;v, std::function&lt; bool(T, T)&gt; compare=<a class="el" href="namespacesorting.html#a7ac0db6b02621f8df053149ab1a3d755">sorting::increasingOrder</a>&lt; T &gt;)</td></tr>
+<tr class="memdesc:a6f89630da43d212e293f8be9de864a00"><td class="mdescLeft">&#160;</td><td class="mdescRight">Quick Sort.  <a href="sorting_8hpp.html#a6f89630da43d212e293f8be9de864a00">More...</a><br /></td></tr>
 <tr class="separator:a6f89630da43d212e293f8be9de864a00"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a93ca0703922e23aabf4223ce2e1af426"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a93ca0703922e23aabf4223ce2e1af426"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="sorting_8hpp.html#a93ca0703922e23aabf4223ce2e1af426">randomisedQuickSort</a> (std::vector&lt; T &gt; &amp;v, std::function&lt; bool(T, T)&gt; compare=<a class="el" href="namespacesorting.html#a7ac0db6b02621f8df053149ab1a3d755">sorting::increasingOrder</a>&lt; T &gt;)</td></tr>
+<tr class="memdesc:a93ca0703922e23aabf4223ce2e1af426"><td class="mdescLeft">&#160;</td><td class="mdescRight">Randomised Quick Sort.  <a href="sorting_8hpp.html#a93ca0703922e23aabf4223ce2e1af426">More...</a><br /></td></tr>
 <tr class="separator:a93ca0703922e23aabf4223ce2e1af426"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
@@ -136,7 +142,9 @@ Variables</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Sorting Algorithms. </p>
-<p >Details. </p>
+<p >Popular Sorting Algorithms using metaprogramming and comparison callback support. </p><dl class="section author"><dt>Author</dt><dd>Atishek Kumar </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>May 2021 </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>Not thread safe and minimal error handling. </dd></dl>
 </div><h2 class="groupheader">Function Documentation</h2>
 <a id="a015779ec37ded61504f5d82616a15a74"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a015779ec37ded61504f5d82616a15a74">&#9670;&nbsp;</a></span>heapSort()</h2>
@@ -167,15 +175,15 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 
 <p><a class="el" href="classHeap.html">Heap</a> Sort. </p>
-<p >Sort the elements of a vector using the <a class="el" href="classHeap.html">Heap</a> Data Structure increasing order by default</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">Reference</td><td>to the vector </td></tr>
-    <tr><td class="paramname">comparison</td><td>function </td></tr>
+<p >Sort the elements of a vector using the <a class="el" href="classHeap.html">Heap</a> Data Structure increasing order by default. \(O(n \log n)\)</p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">v</td><td>reference of the vector to be sorted </td></tr>
+    <tr><td class="paramname">compare</td><td>comparison function </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>nothing </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>none </dd></dl>
 
 </div>
 </div>
@@ -211,7 +219,7 @@ template&lt;typename T &gt; </div>
 <p >Insertion Sort implementation, ideal for a small number of elements, increasing order by default. \(O(n^2)\)</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">v</td><td>Reference to the vector to be sorted </td></tr>
+    <tr><td class="paramname">v</td><td>reference of the vector to be sorted </td></tr>
     <tr><td class="paramname">compare</td><td>comparison function </td></tr>
   </table>
   </dd>
@@ -249,10 +257,10 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 
 <p>Merge Sort. </p>
-<p >Recursive implementation of the merge sort algorithms, increasing order by default. \(O(n \log n)\)</p>
+<p >Recursive implementation of the merge sort algorithm, increasing order by default. \(O(n \log n)\)</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">v</td><td>reference to the vector </td></tr>
+    <tr><td class="paramname">v</td><td>reference of the vector to be sorted </td></tr>
     <tr><td class="paramname">compare</td><td>comparison function </td></tr>
   </table>
   </dd>
@@ -348,15 +356,77 @@ template&lt;typename T &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p >Quick Sort</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">Reference</td><td>to the vector </td></tr>
-    <tr><td class="paramname">comparison</td><td>function </td></tr>
+
+<p>Quick Sort. </p>
+<p >Quick Sort implementation, increasing order by default. \(O(n \log n)\)</p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">v</td><td>reference of the vector to be sorted </td></tr>
+    <tr><td class="paramname">compare</td><td>comparison function </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>nothing </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>none </dd></dl>
+
+</div>
+</div>
+<a id="ad4efff75a3b4beb4af0d919ec2677e90"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4efff75a3b4beb4af0d919ec2677e90">&#9670;&nbsp;</a></span>randomisedPartition()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">int randomisedPartition </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>v</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::function&lt; bool(T, T)&gt;&#160;</td>
+          <td class="paramname"><em>compare</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>low</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>high</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Randomised Partition function for Randomised Quick Sort. </p>
+<p >Selects a random pivot and partitions the array like <a class="el" href="sorting_8hpp.html#a13f0639535a4f11deaee14058848d44f" title="Partition Function for Quick Sort.">partition()</a>. \(O(n)\)</p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">v</td><td>reference to the vector </td></tr>
+    <tr><td class="paramname">compare</td><td>comparison function </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">low</td><td>starting index of the subarray </td></tr>
+    <tr><td class="paramname">high</td><td>ending index of the subarray </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>index of the pivot after partition </dd></dl>
 
 </div>
 </div>
@@ -387,15 +457,17 @@ template&lt;typename T &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p >Randomised Quick Sort</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">Reference</td><td>to the vector </td></tr>
-    <tr><td class="paramname">comparison</td><td>function </td></tr>
+
+<p>Randomised Quick Sort. </p>
+<p >Randomised Quick Sort implementation using a randomised partition for balanced partition and better performance than <a class="el" href="sorting_8hpp.html#a6f89630da43d212e293f8be9de864a00" title="Quick Sort.">quickSort()</a>. \(O(n \log n)\)</p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">v</td><td>reference of the vector to be sorted </td></tr>
+    <tr><td class="paramname">compare</td><td>comparison function </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>nothing </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>none </dd></dl>
 
 </div>
 </div>
