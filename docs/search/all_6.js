@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['quicksort_10',['quickSort',['../sorting_8hpp.html#a6f89630da43d212e293f8be9de864a00',1,'sorting.cpp']]]
+  ['lengthorder_13',['lengthOrder',['../namespacesorting.html#a9fc59e76491c20cd16cb18b2a6c1d476',1,'sorting']]]
 ];

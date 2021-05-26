@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['lengthorder_6',['lengthOrder',['../namespacesorting.html#a9fc59e76491c20cd16cb18b2a6c1d476',1,'sorting']]]
+  ['get_6',['get',['../classDynamicArray.html#a5e5222d3f81985ff88a49b31c348209f',1,'DynamicArray']]]
 ];

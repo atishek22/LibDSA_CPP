@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['partition_23',['partition',['../sorting_8hpp.html#a13f0639535a4f11deaee14058848d44f',1,'sorting.cpp']]]
+  ['get_43',['get',['../classDynamicArray.html#a5e5222d3f81985ff88a49b31c348209f',1,'DynamicArray']]]
 ];

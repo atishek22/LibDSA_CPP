@@ -1,4 +1,4 @@
-#include "divide_conquer.hpp"
+#include "max_subarray_sum.hpp"
 
 /*
  * Find the max subarray of the form A[i..j] where j >= mid and i <= mid

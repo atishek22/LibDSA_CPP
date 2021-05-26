@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['heap_2',['Heap',['../classHeap.html',1,'']]],
-  ['heapsort_3',['heapSort',['../sorting_8hpp.html#a015779ec37ded61504f5d82616a15a74',1,'sorting.cpp']]]
+  ['clear_1',['clear',['../classDynamicArray.html#a1265e263c91cd15797cf8187ef45350e',1,'DynamicArray']]],
+  ['contains_2',['contains',['../classDynamicArray.html#a504c4a52ad24aa3d3b694dd0b9dd36d6',1,'DynamicArray']]]
 ];

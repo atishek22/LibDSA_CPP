@@ -1,12 +1,19 @@
+/**
+ * @file dynamic_array.hpp
+ * @brief Dynamic Arrays (DynamicArray)
+ * @details DynamicArray template class implementing the Dynamic array (Vector) data structure using \a C static arrays
+ * @author Atishek Kumar
+ * @date May 2021
+ * @warning Not thread safe
+ */
 #ifndef DATA_STRUCTURES_DYNAMICARRAY_HPP
 #define DATA_STRUCTURES_DYNAMICARRAY_HPP
 
-// TODO(Optimsize deletions)
-
 #include<bits/stdc++.h>
 
-/*
- * Dynamic Array (Vector) Implementation using C-styled arrays
+/**
+ * @brief DynamicArray (Vector) class.
+ * @details Dynamic array (Vector) data structure implementation using metaprogramming and \a C static sized arrays.
  */
 template<typename T>
 class DynamicArray {
@@ -20,45 +27,138 @@ private:
 
 
 public:
-    /* Constructor with initial size */
-    DynamicArray(int sz);
-
-    /* Default constructor with inital size = 2 */
+    /** @brief Default constructor 
+     * @details Initialises the array with \f$capacity = 2\f$ 
+     * @exception std::bad_alloc()
+     */
     DynamicArray();
 
-    /* Clearing up */
+    /**@brief Constructor
+     * @details Initialise the array with \f$capacity = sz\f$.
+     * @param sz initial array capacity
+     * @exception std::bad_alloc()
+     */
+    DynamicArray(int sz);
+
+    /**@brief Destructor
+     * @details Deallocates the memory assigned to the array.
+     */
     ~DynamicArray();
 
-    /* returns the size of the dynamic arrays */
-    int size();
+    /** @brief Size of the array
+     * @details Returns the number of elements in the array. 
+     *
+     * \f$O(1)\f$
+     * @return integer size of the array
+     */
+    int size() noexcept;
 
-    /* checks if the array is empty */
-    bool isEmpty();
+    /**@brief Checks if array is empty.
+     * @details Returns \a true if the array is empty \a i.e. size() \f$ == 0\f$
+     *
+     * \f$O(1)\f$
+     * @return boolean value
+     */
+    bool isEmpty() noexcept;
 
-    /* getter and setters */
+    /**@brief Getter
+     * @details Returns the value of the element at the \a index.
+     *
+     * Also see @ref operator[].
+     *
+     * \f$O(1)\f$
+     *
+     * @param index of the element 
+     * @return value of the required element
+     * @exception std::out_of_range() - invalid \a index
+     */
     T get(int index);
+
+    /**@brief Setter
+     * @details Set the value of the element at the \a index to the \a value.
+     * 
+     * Also see @ref operator[].
+     *
+     * \f$O(1)\f$
+     * 
+     * @param index of the element to be updated
+     * @param value to be set/updated
+     * @exception std::out_of_range() - invalid \a index
+     */
     void set(int index, T value);
 
-    /* clear the array */
+    /**@brief Clear the array 
+     * @details Removes all the elements from the array and sets the \a size to \f$0\f$
+     *
+     * \f$O(1)\f$
+     * @exception std::bad_alloc()
+     */
     void clear();
 
-    /* adding an element to the array */
+    /**@brief Adding an element to the array
+     * @details Adds an element at the end of the array. The array may be resized as needed.
+     *
+     *\f$O(1)\f$
+     * @param element value
+     * @exception std::runtime_error()
+     */
     void add(T element);
 
-    /* remove at a particular index */
-    void removeAt(int index);
+    /** @brief Remove at \a index 
+     * @details Removes the element at the \index and returns the deletion status. The array may be resized if needed.
+     *
+     *\f$O(n)\f$
+     * @param index of the element to be deleted
+     * @return boolean status value
+     * @exception std::runtime_error()
+     */
+    bool removeAt(int index);
 
-    /* remove a particular value from the array */
+    /** @brief Remove a \a value 
+     * @details Removes the element with the \a value and returns the deletion status. The array may be resized if needed.
+     *
+     *\f$O(n)\f$
+     * @param value of the element to be deleted
+     * @return boolean status value
+     * @exception std::runtime_error()
+     */
     bool remove(T value);
 
-    /* return the index of the argument in the array */
-    int indexOf(T element);
+    /**@brief Index of \a element
+     * @details Finds the index of the \a element if present else returns -1.
+     *
+     * \f$O(n)\f$
+     * @param element value
+     * @return index of the element if present or -1
+     */
+    int indexOf(T element) noexcept;
 
-    /* checks if the array contains an element */
-    bool contains(T element);
+    /**@brief Check \a element
+     * @details Checks if the \a element is present and returns an appropirate boolean value.
+     *
+     * \f$O(n)\f$
+     * @param element value
+     * @return boolean value indicating \a element's presence.
+     */
+    bool contains(T element) noexcept;
 
-    /* printing function */
-    void print();
+    /**@brief Prints the array to standard output
+     *
+     * \f$O(n)\f$
+     */
+    void print() noexcept;
+
+    /**@brief Array subscript operator
+     * @details Operator overload of the array subscript operator, also supports negative array indices.
+     *
+     * \f$ arr[-1] \f$ is equivalent to \f$ arr[size() - 1] \f$
+     *
+     * \f$O(1)\f$
+     *
+     * @param index of the element
+     * @exception std::out_of_range() - invalid \a index
+     */
+    T& operator[](int index);
 };
 
 #endif //DATA_STRUCTURES_DYNAMICARRAY_HPP

@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['mergesort_7',['mergeSort',['../sorting_8hpp.html#a915fc71449b6505ddd0cb65057265977',1,'sorting.cpp']]]
+  ['heap_7',['Heap',['../classHeap.html',1,'']]],
+  ['heapsort_8',['heapSort',['../sorting_8hpp.html#a015779ec37ded61504f5d82616a15a74',1,'sorting.cpp']]]
 ];

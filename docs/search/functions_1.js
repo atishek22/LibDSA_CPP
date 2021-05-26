@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['insertionsort_21',['insertionSort',['../sorting_8hpp.html#a11890b83f326e3a52513e4fe16686124',1,'sorting.cpp']]]
+  ['clear_40',['clear',['../classDynamicArray.html#a1265e263c91cd15797cf8187ef45350e',1,'DynamicArray']]],
+  ['contains_41',['contains',['../classDynamicArray.html#a504c4a52ad24aa3d3b694dd0b9dd36d6',1,'DynamicArray']]]
 ];

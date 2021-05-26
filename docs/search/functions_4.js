@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['quicksort_24',['quickSort',['../sorting_8hpp.html#a6f89630da43d212e293f8be9de864a00',1,'sorting.cpp']]]
+  ['heapsort_44',['heapSort',['../sorting_8hpp.html#a015779ec37ded61504f5d82616a15a74',1,'sorting.cpp']]]
 ];

@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['sorting_13',['sorting',['../namespacesorting.html',1,'']]],
-  ['sorting_2ehpp_14',['sorting.hpp',['../sorting_8hpp.html',1,'']]]
+  ['operator_5b_5d_18',['operator[]',['../classDynamicArray.html#ac409cee6ae68e0cff29b9b597e1a08c2',1,'DynamicArray']]]
 ];
