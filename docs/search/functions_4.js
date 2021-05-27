@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['heapsort_44',['heapSort',['../sorting_8hpp.html#a015779ec37ded61504f5d82616a15a74',1,'sorting.cpp']]]
+  ['get_61',['get',['../classDynamicArray.html#a5e5222d3f81985ff88a49b31c348209f',1,'DynamicArray']]]
 ];

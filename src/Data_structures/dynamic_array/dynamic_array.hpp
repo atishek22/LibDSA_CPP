@@ -11,9 +11,12 @@
 
 #include<bits/stdc++.h>
 
+//TODO(std::initializer_list integratiion)
+
 /**
  * @brief DynamicArray (Vector) class.
  * @details Dynamic array (Vector) data structure implementation using metaprogramming and \a C static sized arrays.
+ * @tparam T Data type for the array elements.
  */
 template<typename T>
 class DynamicArray {
@@ -29,6 +32,7 @@ private:
 public:
     /** @brief Default constructor 
      * @details Initialises the array with \f$capacity = 2\f$ 
+     * @tparam T Data type for the array elements.
      * @exception std::bad_alloc()
      */
     DynamicArray();
@@ -36,6 +40,7 @@ public:
     /**@brief Constructor
      * @details Initialise the array with \f$capacity = sz\f$.
      * @param sz initial array capacity
+     * @tparam T Data type for the array elements.
      * @exception std::bad_alloc()
      */
     DynamicArray(int sz);
@@ -105,7 +110,7 @@ public:
     void add(T element);
 
     /** @brief Remove at \a index 
-     * @details Removes the element at the \index and returns the deletion status. The array may be resized if needed.
+     * @details Removes the element at the \a index and returns the deletion status. The array may be resized if needed.
      *
      *\f$O(n)\f$
      * @param index of the element to be deleted
@@ -137,7 +142,7 @@ public:
      * @details Checks if the \a element is present and returns an appropirate boolean value.
      *
      * \f$O(n)\f$
-     * @param element value
+     * @param element value to be searched
      * @return boolean value indicating \a element's presence.
      */
     bool contains(T element) noexcept;

@@ -84,7 +84,7 @@ $(function() {
 <p>Sorting Algorithms.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;bits/stdc++.h&gt;</code><br />
-<code>#include &quot;../../Data_structures/heap/heap.hpp&quot;</code><br />
+<code>#include &quot;<a class="el" href="heap_8hpp_source.html">../../Data_structures/heap/heap.hpp</a>&quot;</code><br />
 </div>
 <p><a href="sorting_8hpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -114,7 +114,7 @@ Functions</h2></td></tr>
 <tr class="separator:a915fc71449b6505ddd0cb65057265977"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a015779ec37ded61504f5d82616a15a74"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a015779ec37ded61504f5d82616a15a74"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="sorting_8hpp.html#a015779ec37ded61504f5d82616a15a74">heapSort</a> (std::vector&lt; T &gt; &amp;v, std::function&lt; bool(T, T)&gt; compare=<a class="el" href="namespacesorting.html#a7ac0db6b02621f8df053149ab1a3d755">sorting::increasingOrder</a>&lt; T &gt;)</td></tr>
-<tr class="memdesc:a015779ec37ded61504f5d82616a15a74"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classHeap.html">Heap</a> Sort.  <a href="sorting_8hpp.html#a015779ec37ded61504f5d82616a15a74">More...</a><br /></td></tr>
+<tr class="memdesc:a015779ec37ded61504f5d82616a15a74"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classHeap.html" title="Template Heap Data Structure.">Heap</a> Sort.  <a href="sorting_8hpp.html#a015779ec37ded61504f5d82616a15a74">More...</a><br /></td></tr>
 <tr class="separator:a015779ec37ded61504f5d82616a15a74"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6f89630da43d212e293f8be9de864a00"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a6f89630da43d212e293f8be9de864a00"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="sorting_8hpp.html#a6f89630da43d212e293f8be9de864a00">quickSort</a> (std::vector&lt; T &gt; &amp;v, std::function&lt; bool(T, T)&gt; compare=<a class="el" href="namespacesorting.html#a7ac0db6b02621f8df053149ab1a3d755">sorting::increasingOrder</a>&lt; T &gt;)</td></tr>
@@ -174,12 +174,18 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p><a class="el" href="classHeap.html">Heap</a> Sort. </p>
-<p >Sort the elements of a vector using the <a class="el" href="classHeap.html">Heap</a> Data Structure increasing order by default. \(O(n \log n)\)</p>
-<dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
+<p><a class="el" href="classHeap.html" title="Template Heap Data Structure.">Heap</a> Sort. </p>
+<p >Sort the elements of a vector using the <a class="el" href="classHeap.html" title="Template Heap Data Structure.">Heap</a> Data Structure increasing order by default. \(O(n \log n)\)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
     <tr><td class="paramname">v</td><td>reference of the vector to be sorted </td></tr>
     <tr><td class="paramname">compare</td><td>comparison function </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>data type of the <em>std::vector</em> elements </td></tr>
   </table>
   </dd>
 </dl>
@@ -217,10 +223,16 @@ template&lt;typename T &gt; </div>
 
 <p>Insertion Sort. </p>
 <p >Insertion Sort implementation, ideal for a small number of elements, increasing order by default. \(O(n^2)\)</p>
-<dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
     <tr><td class="paramname">v</td><td>reference of the vector to be sorted </td></tr>
     <tr><td class="paramname">compare</td><td>comparison function </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>data type of the <em>std::vector</em> elements </td></tr>
   </table>
   </dd>
 </dl>
@@ -258,10 +270,16 @@ template&lt;typename T &gt; </div>
 
 <p>Merge Sort. </p>
 <p >Recursive implementation of the merge sort algorithm, increasing order by default. \(O(n \log n)\)</p>
-<dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
     <tr><td class="paramname">v</td><td>reference of the vector to be sorted </td></tr>
     <tr><td class="paramname">compare</td><td>comparison function </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>data type of the <em>std::vector</em> elements </td></tr>
   </table>
   </dd>
 </dl>
@@ -311,17 +329,18 @@ template&lt;typename T &gt; </div>
 
 <p>Partition Function for Quick Sort. </p>
 <p >Selects the last element as a pivot and partition the array about the value and the returns the index for the final position for the pivot. \(O(n)\)</p>
-<dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
     <tr><td class="paramname">v</td><td>reference to the vector </td></tr>
     <tr><td class="paramname">compare</td><td>comparison function </td></tr>
+    <tr><td class="paramname">low</td><td>starting index of the subarray </td></tr>
+    <tr><td class="paramname">high</td><td>ending index of the subarray </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">low</td><td>starting index of the subarray </td></tr>
-    <tr><td class="paramname">high</td><td>ending index of the subarray </td></tr>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>data type of the <em>std::vector</em> elements </td></tr>
   </table>
   </dd>
 </dl>
@@ -359,10 +378,16 @@ template&lt;typename T &gt; </div>
 
 <p>Quick Sort. </p>
 <p >Quick Sort implementation, increasing order by default. \(O(n \log n)\)</p>
-<dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
     <tr><td class="paramname">v</td><td>reference of the vector to be sorted </td></tr>
     <tr><td class="paramname">compare</td><td>comparison function </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>data type of the <em>std::vector</em> elements </td></tr>
   </table>
   </dd>
 </dl>
@@ -412,17 +437,18 @@ template&lt;typename T &gt; </div>
 
 <p>Randomised Partition function for Randomised Quick Sort. </p>
 <p >Selects a random pivot and partitions the array like <a class="el" href="sorting_8hpp.html#a13f0639535a4f11deaee14058848d44f" title="Partition Function for Quick Sort.">partition()</a>. \(O(n)\)</p>
-<dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
     <tr><td class="paramname">v</td><td>reference to the vector </td></tr>
     <tr><td class="paramname">compare</td><td>comparison function </td></tr>
+    <tr><td class="paramname">low</td><td>starting index of the subarray </td></tr>
+    <tr><td class="paramname">high</td><td>ending index of the subarray </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">low</td><td>starting index of the subarray </td></tr>
-    <tr><td class="paramname">high</td><td>ending index of the subarray </td></tr>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>data type of the <em>std::vector</em> elements </td></tr>
   </table>
   </dd>
 </dl>
@@ -460,10 +486,16 @@ template&lt;typename T &gt; </div>
 
 <p>Randomised Quick Sort. </p>
 <p >Randomised Quick Sort implementation using a randomised partition for balanced partition and better performance than <a class="el" href="sorting_8hpp.html#a6f89630da43d212e293f8be9de864a00" title="Quick Sort.">quickSort()</a>. \(O(n \log n)\)</p>
-<dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
     <tr><td class="paramname">v</td><td>reference of the vector to be sorted </td></tr>
     <tr><td class="paramname">compare</td><td>comparison function </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>data type of the <em>std::vector</em> elements </td></tr>
   </table>
   </dd>
 </dl>

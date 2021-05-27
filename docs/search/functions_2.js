@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['dynamicarray_42',['DynamicArray',['../classDynamicArray.html#a7d42e6eaa66bab7c43f193e78d2d56a9',1,'DynamicArray::DynamicArray()'],['../classDynamicArray.html#af7b375b2c3dc931cff1f7b5074aa3aa9',1,'DynamicArray::DynamicArray(int sz)']]]
+  ['clear_58',['clear',['../classDynamicArray.html#a1265e263c91cd15797cf8187ef45350e',1,'DynamicArray::clear()'],['../classHeap.html#add95ed839c5b0839919c7c422b9040d1',1,'Heap::clear()']]],
+  ['contains_59',['contains',['../classDynamicArray.html#a504c4a52ad24aa3d3b694dd0b9dd36d6',1,'DynamicArray::contains()'],['../classHeap.html#a757083d4a4fac0af246182ee20a934dd',1,'Heap::contains()']]]
 ];

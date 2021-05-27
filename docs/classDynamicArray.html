@@ -132,7 +132,12 @@ Public Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;typename T&gt;<br />
 class DynamicArray&lt; T &gt;</div><p ><a class="el" href="classDynamicArray.html" title="DynamicArray (Vector) class.">DynamicArray</a> (Vector) class. </p>
-<p >Dynamic array (Vector) data structure implementation using metaprogramming and <em>C</em> static sized arrays. </p>
+<p >Dynamic array (Vector) data structure implementation using metaprogramming and <em>C</em> static sized arrays. </p><dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>Data type for the array elements. </td></tr>
+  </table>
+  </dd>
+</dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a7d42e6eaa66bab7c43f193e78d2d56a9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7d42e6eaa66bab7c43f193e78d2d56a9">&#9670;&nbsp;</a></span>DynamicArray() <span class="overload">[1/2]</span></h2>
@@ -149,7 +154,13 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 
 <p>Default constructor. </p>
-<p >Initialises the array with \(capacity = 2\) </p><dl class="exception"><dt>Exceptions</dt><dd>
+<p >Initialises the array with \(capacity = 2\) </p><dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>Data type for the array elements. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
     <tr><td class="paramname">std::bad_alloc()</td><td></td></tr>
   </table>
@@ -180,6 +191,12 @@ template&lt;typename T &gt; </div>
 <p >Initialise the array with \(capacity = sz\). </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">sz</td><td>initial array capacity </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>Data type for the array elements. </td></tr>
   </table>
   </dd>
 </dl>
@@ -302,7 +319,7 @@ template&lt;typename T &gt; </div>
 <p >Checks if the <em>element</em> is present and returns an appropirate boolean value.</p>
 <p >\(O(n)\) </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">element</td><td>value </td></tr>
+    <tr><td class="paramname">element</td><td>value to be searched </td></tr>
   </table>
   </dd>
 </dl>
@@ -533,7 +550,7 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 
 <p>Remove at <em>index</em>. </p>
-<p >Removes the element at the \index and returns the deletion status. The array may be resized if needed.</p>
+<p >Removes the element at the <em>index</em> and returns the deletion status. The array may be resized if needed.</p>
 <p >\(O(n)\) </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">index</td><td>of the element to be deleted </td></tr>

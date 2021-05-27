@@ -18,8 +18,9 @@
  *  @brief Predefined Standard Comparison Functions
  * 
  *  Template lambda functions for comparing elements in comparison sorts
- *  @tparam first 
- *  @tparam second
+ *  @param first 
+ *  @param second
+ *  @tparam T Data type of the elements to be compared
  *  @return boolean value
  */
 namespace sorting {
@@ -56,10 +57,11 @@ namespace sorting {
  * about the value and the returns the index for the final position 
  * for the pivot. \f$O(n)\f$
  *
- * @tparam v reference to the vector
- * @tparam compare comparison function
+ * @param v reference to the vector
+ * @param compare comparison function
  * @param low starting index of the subarray
  * @param high ending index of the subarray
+ * @tparam T data type of the \a std::vector elements
  * @return index of the pivot after partition
  */
 template<typename T>
@@ -71,10 +73,11 @@ extern int partition(std::vector<T> &v, std::function<bool(T,T)> compare, int lo
  * Selects a random pivot and partitions the array like partition(). 
  * \f$O(n)\f$
  *
- * @tparam v reference to the vector
- * @tparam compare comparison function
+ * @param v reference to the vector
+ * @param compare comparison function
  * @param low starting index of the subarray
  * @param high ending index of the subarray
+ * @tparam T data type of the \a std::vector elements
  * @return index of the pivot after partition
  */
 template<typename T>
@@ -90,8 +93,9 @@ extern int randomisedPartition(std::vector<T> &v, std::function<bool(T,T)> compa
  * Insertion Sort implementation, ideal for a small number of elements,
  * increasing order by default. \f$O(n^2)\f$
  *
- * @tparam v reference of the vector to be sorted
- * @tparam compare comparison function
+ * @param v reference of the vector to be sorted
+ * @param compare comparison function
+ * @tparam T data type of the \a std::vector elements
  * @return none
  */
 template<typename T>
@@ -104,8 +108,9 @@ extern void insertionSort(std::vector<T> &v, std::function<bool(T, T)> compare =
  * Recursive implementation of the merge sort algorithm, increasing 
  * order by default. \f$O(n \log n)\f$
  *
- * @tparam v reference of the vector to be sorted
- * @tparam compare comparison function
+ * @param v reference of the vector to be sorted
+ * @param compare comparison function
+ * @tparam T data type of the \a std::vector elements
  * @return none
  */
 template<typename T>
@@ -119,8 +124,9 @@ extern void mergeSort(std::vector<T> &v, std::function<bool(T, T)> compare = sor
  * increasing order by default. \f$O(n \log n)\f$
 
  *
- * @tparam v reference of the vector to be sorted
- * @tparam compare comparison function
+ * @param v reference of the vector to be sorted
+ * @param compare comparison function
+ * @tparam T data type of the \a std::vector elements
  * @return none
  */
 template<typename T>
@@ -133,8 +139,9 @@ extern void heapSort(std::vector<T> &v, std::function<bool(T, T)> compare = sort
  * Quick Sort implementation, increasing order by default.
  * \f$O(n \log n)\f$
  *
- * @tparam v reference of the vector to be sorted
- * @tparam compare comparison function
+ * @param v reference of the vector to be sorted
+ * @param compare comparison function
+ * @tparam T data type of the \a std::vector elements
  * @return none
  */
 template<typename T>
@@ -146,8 +153,9 @@ extern void quickSort(std::vector<T> &v, std::function<bool(T, T)> compare = sor
  * Randomised Quick Sort implementation using a randomised partition for 
  * balanced partition and better performance than quickSort(). \f$O(n \log n)\f$
  *
- * @tparam v reference of the vector to be sorted
- * @tparam compare comparison function
+ * @param v reference of the vector to be sorted
+ * @param compare comparison function
+ * @tparam T data type of the \a std::vector elements
  * @return none
  */
 template<typename T>

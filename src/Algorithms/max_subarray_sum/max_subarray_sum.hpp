@@ -20,7 +20,8 @@
  * Function for finding the maximum subarray sum for the \a std::vector \a v. The function
  * also computes the indices demarcating the required subarray. \f$O(n \log n)\f$
  * 
- * @tparam v \a std::vector containing the array values
+ * @param v \a std::vector containing the array values
+ * @tparam T data type of the \a std::vector elements
  * @return tuple consisting of the starting, ending subarray indices and the maximum sum
  */
 template <typename T, typename = typename std::enable_if<std::is_arithmetic<T>::value, T>::type>
@@ -32,7 +33,8 @@ extern std::tuple<int, int, T> max_subarray_sum(std::vector<T> v);
  * A faster implementation of max_subarray_sum(). The function calculates only the
  * maximum sum and not the indices of the subarray. \f$O(n)\f$
  *
- * @tparam v \a std::vector containing the array values
+ * @param v \a std::vector containing the array values
+ * @tparam T data type of the \a std::vector elements
  * @return maximum sum value
  */
 template <typename T, typename = typename std::enable_if<std::is_arithmetic<T>::value, T>::type>

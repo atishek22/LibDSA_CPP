@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['sorting_35',['sorting',['../namespacesorting.html',1,'']]]
+  ['heap_50',['heap',['../namespaceheap.html',1,'']]]
 ];

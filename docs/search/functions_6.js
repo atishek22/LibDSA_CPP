@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['max_5fsubarray_5fsum_48',['max_subarray_sum',['../max__subarray__sum_8hpp.html#abbcbb3b499d27ec1eac64d0cef505db2',1,'max_subarray_sum.cpp']]],
-  ['max_5fsubarray_5fsum_5ffast_49',['max_subarray_sum_fast',['../max__subarray__sum_8hpp.html#a8aa9ecb83975d55bd24cfbbea76aa7f4',1,'max_subarray_sum.cpp']]],
-  ['mergesort_50',['mergeSort',['../sorting_8hpp.html#a915fc71449b6505ddd0cb65057265977',1,'sorting.cpp']]]
+  ['indexof_65',['indexOf',['../classDynamicArray.html#a0b0837aa5593fb8ff964572c043ff4d0',1,'DynamicArray']]],
+  ['insert_66',['insert',['../classHeap.html#a1004c9fda75cf2b49e9592c4c7541be7',1,'Heap']]],
+  ['insertionsort_67',['insertionSort',['../sorting_8hpp.html#a11890b83f326e3a52513e4fe16686124',1,'sorting.cpp']]],
+  ['isempty_68',['isEmpty',['../classDynamicArray.html#ad37bad983acf4e1c96ae7d60492a6758',1,'DynamicArray']]]
 ];
