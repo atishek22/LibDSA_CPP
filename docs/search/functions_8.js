@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['operator_5b_5d_73',['operator[]',['../classDynamicArray.html#ac409cee6ae68e0cff29b9b597e1a08c2',1,'DynamicArray']]]
+  ['normalise_87',['normalise',['../linear__sorting_8hpp.html#a14ab154172a5c595ed2d5924eca1c702',1,'linear_sorting.cpp']]]
 ];

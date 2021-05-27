@@ -74,6 +74,7 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#concepts">Concepts</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">max_subarray_sum.hpp File Reference</div></div>
 </div><!--header-->
@@ -85,16 +86,22 @@ $(function() {
 </div>
 <p><a href="max__subarray__sum_8hpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="concepts"></a>
+Concepts</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">concept &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="conceptarithmetic.html">arithmetic</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Arithmetic concept. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:abbcbb3b499d27ec1eac64d0cef505db2"><td class="memTemplParams" colspan="2">template&lt;typename T , typename  = typename std::enable_if&lt;std::is_arithmetic&lt;T&gt;::value, T&gt;::type&gt; </td></tr>
-<tr class="memitem:abbcbb3b499d27ec1eac64d0cef505db2"><td class="memTemplItemLeft" align="right" valign="top">std::tuple&lt; int, int, T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="max__subarray__sum_8hpp.html#abbcbb3b499d27ec1eac64d0cef505db2">max_subarray_sum</a> (std::vector&lt; T &gt; v)</td></tr>
-<tr class="memdesc:abbcbb3b499d27ec1eac64d0cef505db2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum Subarray Sum.  <a href="max__subarray__sum_8hpp.html#abbcbb3b499d27ec1eac64d0cef505db2">More...</a><br /></td></tr>
-<tr class="separator:abbcbb3b499d27ec1eac64d0cef505db2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8aa9ecb83975d55bd24cfbbea76aa7f4"><td class="memTemplParams" colspan="2">template&lt;typename T , typename  = typename std::enable_if&lt;std::is_arithmetic&lt;T&gt;::value, T&gt;::type&gt; </td></tr>
-<tr class="memitem:a8aa9ecb83975d55bd24cfbbea76aa7f4"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="max__subarray__sum_8hpp.html#a8aa9ecb83975d55bd24cfbbea76aa7f4">max_subarray_sum_fast</a> (std::vector&lt; T &gt; v)</td></tr>
-<tr class="memdesc:a8aa9ecb83975d55bd24cfbbea76aa7f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum Subarray Sum Fast.  <a href="max__subarray__sum_8hpp.html#a8aa9ecb83975d55bd24cfbbea76aa7f4">More...</a><br /></td></tr>
-<tr class="separator:a8aa9ecb83975d55bd24cfbbea76aa7f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3950e054f87049f6e387f74a50a633d2"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="conceptarithmetic.html">arithmetic</a> T&gt; </td></tr>
+<tr class="memitem:a3950e054f87049f6e387f74a50a633d2"><td class="memTemplItemLeft" align="right" valign="top">std::tuple&lt; int, int, T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="max__subarray__sum_8hpp.html#a3950e054f87049f6e387f74a50a633d2">max_subarray_sum</a> (std::vector&lt; T &gt; v)</td></tr>
+<tr class="memdesc:a3950e054f87049f6e387f74a50a633d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum Subarray Sum.  <a href="max__subarray__sum_8hpp.html#a3950e054f87049f6e387f74a50a633d2">More...</a><br /></td></tr>
+<tr class="separator:a3950e054f87049f6e387f74a50a633d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68337c64f3d93d19002563607d3fc597"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="conceptarithmetic.html">arithmetic</a> T&gt; </td></tr>
+<tr class="memitem:a68337c64f3d93d19002563607d3fc597"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="max__subarray__sum_8hpp.html#a68337c64f3d93d19002563607d3fc597">max_subarray_sum_fast</a> (std::vector&lt; T &gt; v)</td></tr>
+<tr class="memdesc:a68337c64f3d93d19002563607d3fc597"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum Subarray Sum Fast.  <a href="max__subarray__sum_8hpp.html#a68337c64f3d93d19002563607d3fc597">More...</a><br /></td></tr>
+<tr class="separator:a68337c64f3d93d19002563607d3fc597"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Maximum Subarray Sum Algorithms. </p>
@@ -102,13 +109,13 @@ Functions</h2></td></tr>
 <dl class="section date"><dt>Date</dt><dd>May 2021 </dd></dl>
 <dl class="section warning"><dt>Warning</dt><dd>Not thread safe and minimal error handling </dd></dl>
 </div><h2 class="groupheader">Function Documentation</h2>
-<a id="abbcbb3b499d27ec1eac64d0cef505db2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abbcbb3b499d27ec1eac64d0cef505db2">&#9670;&nbsp;</a></span>max_subarray_sum()</h2>
+<a id="a3950e054f87049f6e387f74a50a633d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3950e054f87049f6e387f74a50a633d2">&#9670;&nbsp;</a></span>max_subarray_sum()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T , typename  = typename std::enable_if&lt;std::is_arithmetic&lt;T&gt;::value, T&gt;::type&gt; </div>
+template&lt;<a class="el" href="conceptarithmetic.html">arithmetic</a> T&gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">std::tuple&lt;int, int, T&gt; max_subarray_sum </td>
@@ -121,7 +128,8 @@ template&lt;typename T , typename  = typename std::enable_if&lt;std::is_arithmet
 </div><div class="memdoc">
 
 <p>Maximum Subarray Sum. </p>
-<p >Function for finding the maximum subarray sum for the <em>std::vector</em> <em>v</em>. The function also computes the indices demarcating the required subarray. \(O(n \log n)\)</p>
+<p >Function for finding the maximum subarray sum for the <em>std::vector</em> <em>v</em>. The function also computes the indices demarcating the required subarray.</p>
+<p >\(O(n \log n)\)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">v</td><td><em>std::vector</em> containing the array values </td></tr>
@@ -130,7 +138,7 @@ template&lt;typename T , typename  = typename std::enable_if&lt;std::is_arithmet
 </dl>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">T</td><td>data type of the <em>std::vector</em> elements </td></tr>
+    <tr><td class="paramname">T</td><td>Numerical data type of the <em>std::vector</em> elements </td></tr>
   </table>
   </dd>
 </dl>
@@ -138,13 +146,13 @@ template&lt;typename T , typename  = typename std::enable_if&lt;std::is_arithmet
 
 </div>
 </div>
-<a id="a8aa9ecb83975d55bd24cfbbea76aa7f4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8aa9ecb83975d55bd24cfbbea76aa7f4">&#9670;&nbsp;</a></span>max_subarray_sum_fast()</h2>
+<a id="a68337c64f3d93d19002563607d3fc597"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68337c64f3d93d19002563607d3fc597">&#9670;&nbsp;</a></span>max_subarray_sum_fast()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T , typename  = typename std::enable_if&lt;std::is_arithmetic&lt;T&gt;::value, T&gt;::type&gt; </div>
+template&lt;<a class="el" href="conceptarithmetic.html">arithmetic</a> T&gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">T max_subarray_sum_fast </td>
@@ -157,7 +165,8 @@ template&lt;typename T , typename  = typename std::enable_if&lt;std::is_arithmet
 </div><div class="memdoc">
 
 <p>Maximum Subarray Sum Fast. </p>
-<p >A faster implementation of <a class="el" href="max__subarray__sum_8hpp.html#abbcbb3b499d27ec1eac64d0cef505db2" title="Maximum Subarray Sum.">max_subarray_sum()</a>. The function calculates only the maximum sum and not the indices of the subarray. \(O(n)\)</p>
+<p >A faster implementation of <a class="el" href="max__subarray__sum_8hpp.html#a3950e054f87049f6e387f74a50a633d2" title="Maximum Subarray Sum.">max_subarray_sum()</a>. The function calculates only the maximum sum and not the indices of the subarray.</p>
+<p >\(O(n)\)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">v</td><td><em>std::vector</em> containing the array values </td></tr>

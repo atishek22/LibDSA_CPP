@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['sorting_2ehpp_55',['sorting.hpp',['../sorting_8hpp.html',1,'']]]
+  ['max_5fsubarray_5fsum_2ehpp_66',['max_subarray_sum.hpp',['../max__subarray__sum_8hpp.html',1,'']]]
 ];

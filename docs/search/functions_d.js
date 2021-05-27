@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['_7edynamicarray_85',['~DynamicArray',['../classDynamicArray.html#ab004399d442ebd2a9698cbc8da0b48f2',1,'DynamicArray']]],
-  ['_7eheap_86',['~Heap',['../classHeap.html#a7887eec294f679fad13d8226ba7b3a44',1,'Heap']]]
+  ['set_99',['set',['../classDynamicArray.html#a2bac161b54d36b1dd96d628d7f6fda37',1,'DynamicArray']]],
+  ['size_100',['size',['../classDynamicArray.html#afcbaae4d40721899e0fb317f3ced3855',1,'DynamicArray::size()'],['../classHeap.html#a416424472e149cc3a6f882770d9820e0',1,'Heap::size()']]]
 ];

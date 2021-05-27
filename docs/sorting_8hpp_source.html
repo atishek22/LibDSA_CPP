@@ -85,58 +85,64 @@ $(function() {
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include&quot;../../Data_structures/heap/heap.hpp&quot;</span></div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacesorting.html">sorting</a> {</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="namespacesorting.html#a7ac0db6b02621f8df053149ab1a3d755">   30</a></span>&#160;        std::function&lt;bool(T, T)&gt; <a class="code" href="namespacesorting.html#a7ac0db6b02621f8df053149ab1a3d755">increasingOrder</a> = [](<span class="keyword">const</span> T &amp;first, <span class="keyword">const</span> T &amp;second) {</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;            <span class="keywordflow">return</span> first &gt; second;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        };</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="namespacesorting.html#a4ef6c3a485f05a85ba7e2e6b5a9a5409">   37</a></span>&#160;        std::function&lt;bool(T, T)&gt; <a class="code" href="namespacesorting.html#a4ef6c3a485f05a85ba7e2e6b5a9a5409">decreasingOrder</a> = [](<span class="keyword">const</span> T &amp;first, <span class="keyword">const</span> T &amp;second) {</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;            <span class="keywordflow">return</span> first &lt; second;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        };</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="conceptsorting_1_1container.html">   32</a></span>&#160;        <span class="keyword">concept </span><a class="code" href="conceptsorting_1_1container.html">container</a> = <span class="keyword">requires</span>(T a) {</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;            { a.size() } -&gt; std::same_as&lt;typename T::size_type&gt;;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        };</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="namespacesorting.html#a7ac0db6b02621f8df053149ab1a3d755">   39</a></span>&#160;        std::function&lt;bool(T, T)&gt; <a class="code" href="namespacesorting.html#a7ac0db6b02621f8df053149ab1a3d755">increasingOrder</a> = [](<span class="keyword">const</span> T &amp;first, <span class="keyword">const</span> T &amp;second) {</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;            <span class="keywordflow">return</span> first &gt; second;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        };</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="namespacesorting.html#a9fc59e76491c20cd16cb18b2a6c1d476">   46</a></span>&#160;        std::function&lt;bool(T, T)&gt; <a class="code" href="namespacesorting.html#a9fc59e76491c20cd16cb18b2a6c1d476">lengthOrder</a> = [](<span class="keyword">const</span> T &amp;first, <span class="keyword">const</span> T &amp;second) {</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            <span class="keywordflow">if</span> (first.size() == second.size()) <span class="keywordflow">return</span> first &gt; second;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            <span class="keywordflow">else</span> <span class="keywordflow">return</span> first.size() &gt; second.size();</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        };</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;}</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">int</span> <a class="code" href="sorting_8hpp.html#a13f0639535a4f11deaee14058848d44f">partition</a>(std::vector&lt;T&gt; &amp;v, std::function&lt;<span class="keywordtype">bool</span>(T,T)&gt; compare, <span class="keywordtype">int</span> low, <span class="keywordtype">int</span> high);</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">int</span> <a class="code" href="sorting_8hpp.html#ad4efff75a3b4beb4af0d919ec2677e90">randomisedPartition</a>(std::vector&lt;T&gt; &amp;v, std::function&lt;<span class="keywordtype">bool</span>(T,T)&gt; compare, <span class="keywordtype">int</span> low, <span class="keywordtype">int</span> high);</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="comment">/*</span></div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="comment"> * Sorting Algorithms</span></div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="sorting_8hpp.html#a11890b83f326e3a52513e4fe16686124">insertionSort</a>(std::vector&lt;T&gt; &amp;v, std::function&lt;<span class="keywordtype">bool</span>(T, T)&gt; compare = sorting::increasingOrder&lt;T&gt;);</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160; </div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="sorting_8hpp.html#a915fc71449b6505ddd0cb65057265977">mergeSort</a>(std::vector&lt;T&gt; &amp;v, std::function&lt;<span class="keywordtype">bool</span>(T, T)&gt; compare = sorting::increasingOrder&lt;T&gt;);</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160; </div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160; </div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="sorting_8hpp.html#a015779ec37ded61504f5d82616a15a74">heapSort</a>(std::vector&lt;T&gt; &amp;v, std::function&lt;<span class="keywordtype">bool</span>(T, T)&gt; compare = sorting::increasingOrder&lt;T&gt;);</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160; </div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160; </div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="sorting_8hpp.html#a6f89630da43d212e293f8be9de864a00">quickSort</a>(std::vector&lt;T&gt; &amp;v, std::function&lt;<span class="keywordtype">bool</span>(T, T)&gt; compare = sorting::increasingOrder&lt;T&gt;);</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160; </div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="sorting_8hpp.html#a93ca0703922e23aabf4223ce2e1af426">randomisedQuickSort</a>(std::vector&lt;T&gt; &amp;v, std::function&lt;<span class="keywordtype">bool</span>(T,T)&gt; compare = sorting::increasingOrder&lt;T&gt;);</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160; </div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;<span class="preprocessor">#endif </span><span class="comment">//ALGORITHMS_SORTING_HPP</span></div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="namespacesorting.html#a4ef6c3a485f05a85ba7e2e6b5a9a5409">   46</a></span>&#160;        std::function&lt;bool(T, T)&gt; <a class="code" href="namespacesorting.html#a4ef6c3a485f05a85ba7e2e6b5a9a5409">decreasingOrder</a> = [](<span class="keyword">const</span> T &amp;first, <span class="keyword">const</span> T &amp;second) {</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            <span class="keywordflow">return</span> first &lt; second;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        };</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keyword">template</span>&lt;container T&gt;</div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="namespacesorting.html#a9fc59e76491c20cd16cb18b2a6c1d476">   55</a></span>&#160;        std::function&lt;bool(T, T)&gt; <a class="code" href="namespacesorting.html#a9fc59e76491c20cd16cb18b2a6c1d476">lengthOrder</a> = [](<span class="keyword">const</span> T &amp;first, <span class="keyword">const</span> T &amp;second) {</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            <span class="keywordflow">if</span> (first.size() == second.size()) <span class="keywordflow">return</span> first &gt; second;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            <span class="keywordflow">else</span> <span class="keywordflow">return</span> first.size() &gt; second.size();</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        };</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;}</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">int</span> <a class="code" href="sorting_8hpp.html#a13f0639535a4f11deaee14058848d44f">partition</a>(std::vector&lt;T&gt; &amp;v, std::function&lt;<span class="keywordtype">bool</span>(T,T)&gt; compare, <span class="keywordtype">int</span> low, <span class="keywordtype">int</span> high);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">int</span> <a class="code" href="sorting_8hpp.html#ad4efff75a3b4beb4af0d919ec2677e90">randomisedPartition</a>(std::vector&lt;T&gt; &amp;v, std::function&lt;<span class="keywordtype">bool</span>(T,T)&gt; compare, <span class="keywordtype">int</span> low, <span class="keywordtype">int</span> high);</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="comment"> * Sorting Algorithms</span></div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="sorting_8hpp.html#a11890b83f326e3a52513e4fe16686124">insertionSort</a>(std::vector&lt;T&gt; &amp;v, std::function&lt;<span class="keywordtype">bool</span>(T, T)&gt; compare = sorting::increasingOrder&lt;T&gt;);</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160; </div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160; </div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="sorting_8hpp.html#a915fc71449b6505ddd0cb65057265977">mergeSort</a>(std::vector&lt;T&gt; &amp;v, std::function&lt;<span class="keywordtype">bool</span>(T, T)&gt; compare = sorting::increasingOrder&lt;T&gt;);</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160; </div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160; </div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="sorting_8hpp.html#a015779ec37ded61504f5d82616a15a74">heapSort</a>(std::vector&lt;T&gt; &amp;v, std::function&lt;<span class="keywordtype">bool</span>(T, T)&gt; compare = sorting::increasingOrder&lt;T&gt;);</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160; </div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160; </div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="sorting_8hpp.html#a6f89630da43d212e293f8be9de864a00">quickSort</a>(std::vector&lt;T&gt; &amp;v, std::function&lt;<span class="keywordtype">bool</span>(T, T)&gt; compare = sorting::increasingOrder&lt;T&gt;);</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160; </div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="sorting_8hpp.html#a93ca0703922e23aabf4223ce2e1af426">randomisedQuickSort</a>(std::vector&lt;T&gt; &amp;v, std::function&lt;<span class="keywordtype">bool</span>(T,T)&gt; compare = sorting::increasingOrder&lt;T&gt;);</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160; </div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;<span class="preprocessor">#endif </span><span class="comment">//ALGORITHMS_SORTING_HPP</span></div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160; </div>
+<div class="ttc" id="aconceptsorting_1_1container_html"><div class="ttname"><a href="conceptsorting_1_1container.html">sorting::container</a></div><div class="ttdoc">Container concept.</div><div class="ttdef"><b>Definition:</b> sorting.hpp:32</div></div>
 <div class="ttc" id="anamespacesorting_html"><div class="ttname"><a href="namespacesorting.html">sorting</a></div><div class="ttdoc">Predefined Standard Comparison Functions.</div></div>
-<div class="ttc" id="anamespacesorting_html_a4ef6c3a485f05a85ba7e2e6b5a9a5409"><div class="ttname"><a href="namespacesorting.html#a4ef6c3a485f05a85ba7e2e6b5a9a5409">sorting::decreasingOrder</a></div><div class="ttdeci">std::function&lt; bool(T, T)&gt; decreasingOrder</div><div class="ttdoc">Comparator for sorting in decreasing order.</div><div class="ttdef"><b>Definition:</b> sorting.hpp:37</div></div>
-<div class="ttc" id="anamespacesorting_html_a7ac0db6b02621f8df053149ab1a3d755"><div class="ttname"><a href="namespacesorting.html#a7ac0db6b02621f8df053149ab1a3d755">sorting::increasingOrder</a></div><div class="ttdeci">std::function&lt; bool(T, T)&gt; increasingOrder</div><div class="ttdoc">Comparator for sorting in increasing order.</div><div class="ttdef"><b>Definition:</b> sorting.hpp:30</div></div>
-<div class="ttc" id="anamespacesorting_html_a9fc59e76491c20cd16cb18b2a6c1d476"><div class="ttname"><a href="namespacesorting.html#a9fc59e76491c20cd16cb18b2a6c1d476">sorting::lengthOrder</a></div><div class="ttdeci">std::function&lt; bool(T, T)&gt; lengthOrder</div><div class="ttdoc">Comparator for sorting in order of increasing length.</div><div class="ttdef"><b>Definition:</b> sorting.hpp:46</div></div>
+<div class="ttc" id="anamespacesorting_html_a4ef6c3a485f05a85ba7e2e6b5a9a5409"><div class="ttname"><a href="namespacesorting.html#a4ef6c3a485f05a85ba7e2e6b5a9a5409">sorting::decreasingOrder</a></div><div class="ttdeci">std::function&lt; bool(T, T)&gt; decreasingOrder</div><div class="ttdoc">Comparator for sorting in decreasing order.</div><div class="ttdef"><b>Definition:</b> sorting.hpp:46</div></div>
+<div class="ttc" id="anamespacesorting_html_a7ac0db6b02621f8df053149ab1a3d755"><div class="ttname"><a href="namespacesorting.html#a7ac0db6b02621f8df053149ab1a3d755">sorting::increasingOrder</a></div><div class="ttdeci">std::function&lt; bool(T, T)&gt; increasingOrder</div><div class="ttdoc">Comparator for sorting in increasing order.</div><div class="ttdef"><b>Definition:</b> sorting.hpp:39</div></div>
+<div class="ttc" id="anamespacesorting_html_a9fc59e76491c20cd16cb18b2a6c1d476"><div class="ttname"><a href="namespacesorting.html#a9fc59e76491c20cd16cb18b2a6c1d476">sorting::lengthOrder</a></div><div class="ttdeci">std::function&lt; bool(T, T)&gt; lengthOrder</div><div class="ttdoc">Comparator for sorting in order of increasing length.</div><div class="ttdef"><b>Definition:</b> sorting.hpp:55</div></div>
 <div class="ttc" id="asorting_8hpp_html_a015779ec37ded61504f5d82616a15a74"><div class="ttname"><a href="sorting_8hpp.html#a015779ec37ded61504f5d82616a15a74">heapSort</a></div><div class="ttdeci">void heapSort(std::vector&lt; T &gt; &amp;v, std::function&lt; bool(T, T)&gt; compare=sorting::increasingOrder&lt; T &gt;)</div><div class="ttdoc">Heap Sort.</div><div class="ttdef"><b>Definition:</b> sorting.cpp:83</div></div>
 <div class="ttc" id="asorting_8hpp_html_a11890b83f326e3a52513e4fe16686124"><div class="ttname"><a href="sorting_8hpp.html#a11890b83f326e3a52513e4fe16686124">insertionSort</a></div><div class="ttdeci">void insertionSort(std::vector&lt; T &gt; &amp;v, std::function&lt; bool(T, T)&gt; compare=sorting::increasingOrder&lt; T &gt;)</div><div class="ttdoc">Insertion Sort.</div><div class="ttdef"><b>Definition:</b> sorting.cpp:62</div></div>
 <div class="ttc" id="asorting_8hpp_html_a13f0639535a4f11deaee14058848d44f"><div class="ttname"><a href="sorting_8hpp.html#a13f0639535a4f11deaee14058848d44f">partition</a></div><div class="ttdeci">int partition(std::vector&lt; T &gt; &amp;v, std::function&lt; bool(T, T)&gt; compare, int low, int high)</div><div class="ttdoc">Partition Function for Quick Sort.</div><div class="ttdef"><b>Definition:</b> sorting.cpp:91</div></div>

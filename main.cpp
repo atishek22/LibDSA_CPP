@@ -8,15 +8,20 @@
  */
 
 int main() {
-  srand(0);
-  std::vector<int> v;
-  for(int i = 0; i < 10; i++){
-    v.push_back(i);
-  }
-  randomisedQuickSort(v, sorting::decreasingOrder<int>);
-  for(int i = 0; i < 10; i++) {
-    std::cout << v[i] << " ";
-  }
-  std::cout << "\n";
-  return 0;
+    srand(0);
+    std::vector<float> v;
+    for(int i = 0; i < 20; i++){
+        float val = rand()%100;
+        val /= 100;
+        v.push_back(val);
+    }
+    std::vector<std::string> s{"aaa", "aa", "abab", "bbb", "abc", "a", "c" };
+
+    auto out = bucketSort(v, linear_sorting::DECREASING_ORDER);
+
+    for(int i = 0; i < out.size(); i++) {
+        std::cout << out[i] << " ";
+    }
+    std::cout << "\n";
+    return 0;
 }
