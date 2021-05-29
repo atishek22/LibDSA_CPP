@@ -85,6 +85,7 @@ $(function() {
 <p>Sorting Algorithms.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;bits/stdc++.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="comparable_8hpp_source.html">../../Utils/comparable.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="heap_8hpp_source.html">../../Data_structures/heap/heap.hpp</a>&quot;</code><br />
 </div>
 <p><a href="sorting_8hpp_source.html">Go to the source code of this file.</a></p>
@@ -103,31 +104,31 @@ Concepts</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a13f0639535a4f11deaee14058848d44f"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a13f0639535a4f11deaee14058848d44f"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="conceptComparable.html">Comparable</a> T&gt; </td></tr>
 <tr class="memitem:a13f0639535a4f11deaee14058848d44f"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="sorting_8hpp.html#a13f0639535a4f11deaee14058848d44f">partition</a> (std::vector&lt; T &gt; &amp;v, std::function&lt; bool(T, T)&gt; compare, int low, int high)</td></tr>
 <tr class="memdesc:a13f0639535a4f11deaee14058848d44f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Partition Function for Quick Sort.  <a href="sorting_8hpp.html#a13f0639535a4f11deaee14058848d44f">More...</a><br /></td></tr>
 <tr class="separator:a13f0639535a4f11deaee14058848d44f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad4efff75a3b4beb4af0d919ec2677e90"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ad4efff75a3b4beb4af0d919ec2677e90"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="conceptComparable.html">Comparable</a> T&gt; </td></tr>
 <tr class="memitem:ad4efff75a3b4beb4af0d919ec2677e90"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="sorting_8hpp.html#ad4efff75a3b4beb4af0d919ec2677e90">randomisedPartition</a> (std::vector&lt; T &gt; &amp;v, std::function&lt; bool(T, T)&gt; compare, int low, int high)</td></tr>
 <tr class="memdesc:ad4efff75a3b4beb4af0d919ec2677e90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Randomised Partition function for Randomised Quick Sort.  <a href="sorting_8hpp.html#ad4efff75a3b4beb4af0d919ec2677e90">More...</a><br /></td></tr>
 <tr class="separator:ad4efff75a3b4beb4af0d919ec2677e90"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a11890b83f326e3a52513e4fe16686124"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a11890b83f326e3a52513e4fe16686124"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="conceptComparable.html">Comparable</a> T&gt; </td></tr>
 <tr class="memitem:a11890b83f326e3a52513e4fe16686124"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="sorting_8hpp.html#a11890b83f326e3a52513e4fe16686124">insertionSort</a> (std::vector&lt; T &gt; &amp;v, std::function&lt; bool(T, T)&gt; compare=<a class="el" href="namespacesorting.html#a7ac0db6b02621f8df053149ab1a3d755">sorting::increasingOrder</a>&lt; T &gt;)</td></tr>
 <tr class="memdesc:a11890b83f326e3a52513e4fe16686124"><td class="mdescLeft">&#160;</td><td class="mdescRight">Insertion Sort.  <a href="sorting_8hpp.html#a11890b83f326e3a52513e4fe16686124">More...</a><br /></td></tr>
 <tr class="separator:a11890b83f326e3a52513e4fe16686124"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a915fc71449b6505ddd0cb65057265977"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a915fc71449b6505ddd0cb65057265977"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="conceptComparable.html">Comparable</a> T&gt; </td></tr>
 <tr class="memitem:a915fc71449b6505ddd0cb65057265977"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="sorting_8hpp.html#a915fc71449b6505ddd0cb65057265977">mergeSort</a> (std::vector&lt; T &gt; &amp;v, std::function&lt; bool(T, T)&gt; compare=<a class="el" href="namespacesorting.html#a7ac0db6b02621f8df053149ab1a3d755">sorting::increasingOrder</a>&lt; T &gt;)</td></tr>
 <tr class="memdesc:a915fc71449b6505ddd0cb65057265977"><td class="mdescLeft">&#160;</td><td class="mdescRight">Merge Sort.  <a href="sorting_8hpp.html#a915fc71449b6505ddd0cb65057265977">More...</a><br /></td></tr>
 <tr class="separator:a915fc71449b6505ddd0cb65057265977"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a015779ec37ded61504f5d82616a15a74"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a015779ec37ded61504f5d82616a15a74"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="conceptComparable.html">Comparable</a> T&gt; </td></tr>
 <tr class="memitem:a015779ec37ded61504f5d82616a15a74"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="sorting_8hpp.html#a015779ec37ded61504f5d82616a15a74">heapSort</a> (std::vector&lt; T &gt; &amp;v, std::function&lt; bool(T, T)&gt; compare=<a class="el" href="namespacesorting.html#a7ac0db6b02621f8df053149ab1a3d755">sorting::increasingOrder</a>&lt; T &gt;)</td></tr>
 <tr class="memdesc:a015779ec37ded61504f5d82616a15a74"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classHeap.html" title="Template Heap Data Structure.">Heap</a> Sort.  <a href="sorting_8hpp.html#a015779ec37ded61504f5d82616a15a74">More...</a><br /></td></tr>
 <tr class="separator:a015779ec37ded61504f5d82616a15a74"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6f89630da43d212e293f8be9de864a00"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a6f89630da43d212e293f8be9de864a00"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="conceptComparable.html">Comparable</a> T&gt; </td></tr>
 <tr class="memitem:a6f89630da43d212e293f8be9de864a00"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="sorting_8hpp.html#a6f89630da43d212e293f8be9de864a00">quickSort</a> (std::vector&lt; T &gt; &amp;v, std::function&lt; bool(T, T)&gt; compare=<a class="el" href="namespacesorting.html#a7ac0db6b02621f8df053149ab1a3d755">sorting::increasingOrder</a>&lt; T &gt;)</td></tr>
 <tr class="memdesc:a6f89630da43d212e293f8be9de864a00"><td class="mdescLeft">&#160;</td><td class="mdescRight">Quick Sort.  <a href="sorting_8hpp.html#a6f89630da43d212e293f8be9de864a00">More...</a><br /></td></tr>
 <tr class="separator:a6f89630da43d212e293f8be9de864a00"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a93ca0703922e23aabf4223ce2e1af426"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a93ca0703922e23aabf4223ce2e1af426"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="conceptComparable.html">Comparable</a> T&gt; </td></tr>
 <tr class="memitem:a93ca0703922e23aabf4223ce2e1af426"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="sorting_8hpp.html#a93ca0703922e23aabf4223ce2e1af426">randomisedQuickSort</a> (std::vector&lt; T &gt; &amp;v, std::function&lt; bool(T, T)&gt; compare=<a class="el" href="namespacesorting.html#a7ac0db6b02621f8df053149ab1a3d755">sorting::increasingOrder</a>&lt; T &gt;)</td></tr>
 <tr class="memdesc:a93ca0703922e23aabf4223ce2e1af426"><td class="mdescLeft">&#160;</td><td class="mdescRight">Randomised Quick Sort.  <a href="sorting_8hpp.html#a93ca0703922e23aabf4223ce2e1af426">More...</a><br /></td></tr>
 <tr class="separator:a93ca0703922e23aabf4223ce2e1af426"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -159,7 +160,7 @@ Variables</h2></td></tr>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T &gt; </div>
+template&lt;<a class="el" href="conceptComparable.html">Comparable</a> T&gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">void heapSort </td>
@@ -206,7 +207,7 @@ template&lt;typename T &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T &gt; </div>
+template&lt;<a class="el" href="conceptComparable.html">Comparable</a> T&gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">void insertionSort </td>
@@ -253,7 +254,7 @@ template&lt;typename T &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T &gt; </div>
+template&lt;<a class="el" href="conceptComparable.html">Comparable</a> T&gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">void mergeSort </td>
@@ -300,7 +301,7 @@ template&lt;typename T &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T &gt; </div>
+template&lt;<a class="el" href="conceptComparable.html">Comparable</a> T&gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">int partition </td>
@@ -361,7 +362,7 @@ template&lt;typename T &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T &gt; </div>
+template&lt;<a class="el" href="conceptComparable.html">Comparable</a> T&gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">void quickSort </td>
@@ -408,7 +409,7 @@ template&lt;typename T &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T &gt; </div>
+template&lt;<a class="el" href="conceptComparable.html">Comparable</a> T&gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">int randomisedPartition </td>
@@ -469,7 +470,7 @@ template&lt;typename T &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T &gt; </div>
+template&lt;<a class="el" href="conceptComparable.html">Comparable</a> T&gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">void randomisedQuickSort </td>

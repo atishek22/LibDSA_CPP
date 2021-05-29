@@ -32,6 +32,7 @@ namespace linear_sorting{
  * @param maximum maximum value of the element in \a v
  * @param compareFlag @ref linear_sorting constant defining sorted order
  * @tparam T Data type of the \a std::vector elements and \a maximum - Should be Integral
+ * @return Sorted vector
  */
 template<std::integral T>
 extern std::vector<T> countingSort(std::vector<T> v, T maximum , int compareFlag = linear_sorting::INCREASING_ORDER);
@@ -46,6 +47,7 @@ extern std::vector<T> countingSort(std::vector<T> v, T maximum , int compareFlag
  * @param maximum maximum value of each digit in an element of \a v
  * @param compareFlag @ref linear_sorting constant defining sorted order
  * @tparam T Data type of the \a std::vector elements - Should be Integral
+ * @return Sorted vector
  */
 template<std::integral T>
 extern std::vector<T> radixSort(std::vector<T> v, int digits, int maximum = 9, int compareFlag = linear_sorting::INCREASING_ORDER);
@@ -73,6 +75,7 @@ extern void normalise(std::vector<T> &v, std::function<T(T)> compute);
  * @param v \a std::vector of integral values to be sorted
  * @param compareFlag @ref linear_sorting constant defining sorted order
  * @tparam T Data type of the \a std::vector elements - Should be floating_point 
+ * @return Sorted vector
  */
 template<std::floating_point T>
 extern std::vector<T> bucketSort(std::vector<T> v, int compareFlag = linear_sorting::INCREASING_ORDER);

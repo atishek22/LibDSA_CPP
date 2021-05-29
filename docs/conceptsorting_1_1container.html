@@ -83,9 +83,10 @@ $(function() {
 <p><code>#include &lt;<a class="el" href="sorting_8hpp_source.html">sorting.hpp</a>&gt;</code></p>
 <h2 class="groupheader">Concept definition</h2>
 <div class="fragment"><div class="line"><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><span class="keyword">concept </span><a class="code" href="conceptsorting_1_1container.html">sorting::container</a> =  <span class="keyword">requires</span>(T a) {</div>
+<div class="line"><span class="keyword">concept </span><a class="code" href="conceptsorting_1_1container.html">sorting::container</a> =  <a class="code" href="conceptComparable.html">Comparable&lt;T&gt;</a> &amp;&amp; <span class="keyword">requires</span>(T a) {</div>
 <div class="line">            { a.size() } -&gt; std::same_as&lt;typename T::size_type&gt;;</div>
 <div class="line">        }</div>
+<div class="ttc" id="aconceptComparable_html"><div class="ttname"><a href="conceptComparable.html">Comparable</a></div><div class="ttdoc">Comparable concept.</div><div class="ttdef"><b>Definition:</b> comparable.hpp:16</div></div>
 <div class="ttc" id="aconceptsorting_1_1container_html"><div class="ttname"><a href="conceptsorting_1_1container.html">sorting::container</a></div><div class="ttdoc">Container concept.</div><div class="ttdef"><b>Definition:</b> sorting.hpp:32</div></div>
 </div><!-- fragment --><a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Container concept. </p>

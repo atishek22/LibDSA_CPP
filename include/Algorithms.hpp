@@ -11,4 +11,7 @@
 #include"../src/Algorithms/max_subarray_sum/max_subarray_sum.hpp"
 #include"../src/Algorithms/max_subarray_sum/max_subarray_sum.cpp"
 
+#include"../src/Algorithms/order_statistics/order_statistics.hpp"
+#include"../src/Algorithms/order_statistics/order_statistics.cpp"
+
 #endif //ALGORITHMS_ALGORITHM_HPP

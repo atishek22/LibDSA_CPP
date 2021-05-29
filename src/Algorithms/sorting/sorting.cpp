@@ -4,7 +4,7 @@ namespace {
     /*
      * Helper Merge function
      */
-    template<typename T>
+    template<Comparable T>
         void merge(std::vector<T> &v, int low, int mid, int high, std::function<bool(T, T)> compare) {
             std::vector<T> L, R;
             for (int i = low; i <= mid; i++) L.push_back(v[i]);
@@ -29,7 +29,7 @@ namespace {
     /*
      * Recursive merge sort helper function
      */
-    template<typename T>
+    template<Comparable T>
         void mergeSortRecur(std::vector<T> &v, int low, int high, std::function<bool(T, T)> compare) {
             if (low < high) {
                 int mid = (low + high) / 2;
@@ -39,7 +39,7 @@ namespace {
             }
         }
 
-    template<typename T>
+    template<Comparable T>
         void quickSortRecur(std::vector<T> &v, int low, int high, std::function<bool(T,T)> compare) {
             if(low < high) {
                 int q = partition(v, compare, low, high);
@@ -48,7 +48,7 @@ namespace {
             }
         }
 
-    template<typename T>
+    template<Comparable T>
         void randomisedQuickSortRecur(std::vector<T> &v, int low, int high, std::function<bool(T,T)> compare) {
             if(low < high) {
                 int q = randomisedPartition(v, compare, low, high);
@@ -58,7 +58,7 @@ namespace {
         }
 }
 
-template<typename T>
+template<Comparable T>
 void insertionSort(std::vector<T> &v, std::function<bool(T, T)> compare) {
     for (int j = 1; j < v.size(); j++) {
         T key = v[j];
@@ -73,13 +73,13 @@ void insertionSort(std::vector<T> &v, std::function<bool(T, T)> compare) {
 
 
 
-template<typename T>
+template<Comparable T>
 void mergeSort(std::vector<T> &v, std::function<bool(T, T)> compare) {
     mergeSortRecur(v, 0, v.size() - 1, compare);
 }
 
 
-template<typename T>
+template<Comparable T>
 void heapSort(std::vector<T> &v, std::function<bool(T, T)> compare) {
     Heap<T> h(v, compare);
     for(int i = v.size() - 1; i >= 0; i--) {
@@ -87,7 +87,7 @@ void heapSort(std::vector<T> &v, std::function<bool(T, T)> compare) {
     }
 }
 
-template<typename T>
+template<Comparable T>
 int partition(std::vector<T> &v, std::function<bool(T,T)> compare, int low, int high) {
     T pivot = v[high];
     int i = low - 1;
@@ -101,12 +101,12 @@ int partition(std::vector<T> &v, std::function<bool(T,T)> compare, int low, int 
     return i+1;
 }
 
-template<typename T>
+template<Comparable T>
 void quickSort(std::vector<T> &v, std::function<bool(T,T)> compare) {
     quickSortRecur(v, 0, v.size() - 1, compare);
 }
 
-template<typename T>
+template<Comparable T>
 int randomisedPartition(std::vector<T> &v, std::function<bool(T,T)> compare, int low, int high) {
     std::random_device rd;
     std::default_random_engine e(rd());
@@ -116,7 +116,7 @@ int randomisedPartition(std::vector<T> &v, std::function<bool(T,T)> compare, int
     return partition(v, compare, low, high);
 }
 
-template<typename T>
+template<Comparable T>
 void randomisedQuickSort(std::vector<T> &v, std::function<bool(T,T)> compare) {
     randomisedQuickSortRecur(v, 0, v.size() - 1, compare);
 }

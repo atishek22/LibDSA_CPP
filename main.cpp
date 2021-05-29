@@ -17,11 +17,18 @@ int main() {
     }
     std::vector<std::string> s{"aaa", "aa", "abab", "bbb", "abc", "a", "c" };
 
-    auto out = bucketSort(v, linear_sorting::DECREASING_ORDER);
+    std::cout << maxVal(s) << " " << minVal(s) << "\n";
+    auto ret = minmaxVal(s);
+    std::cout << ret.first << " " << ret.second << "\n";
 
-    for(int i = 0; i < out.size(); i++) {
-        std::cout << out[i] << " ";
-    }
+    std::cout << selectElement(s, 7);
+
+    std::vector<int> v3;
+
+
+//    for(int i = 0; i < out.size(); i++) {
+//        std::cout << out[i] << " ";
+//    }
     std::cout << "\n";
     return 0;
 }

@@ -11,7 +11,7 @@
 #define ALGORITHMS_SORTING_HPP
 
 #include<bits/stdc++.h>
-
+#include"../../Utils/comparable.hpp"
 #include"../../Data_structures/heap/heap.hpp"
 
 /** @namespace sorting
@@ -29,7 +29,7 @@ namespace sorting {
      * See @ref sorting::lengthOrder<>()
      */
     template<typename T>
-        concept container = requires(T a) {
+        concept container = Comparable<T> && requires(T a) {
             { a.size() } -> std::same_as<typename T::size_type>;
         };
 
@@ -73,7 +73,7 @@ namespace sorting {
  * @tparam T data type of the \a std::vector elements
  * @return index of the pivot after partition
  */
-template<typename T>
+template<Comparable T>
 extern int partition(std::vector<T> &v, std::function<bool(T,T)> compare, int low, int high);
 
 /**
@@ -89,7 +89,7 @@ extern int partition(std::vector<T> &v, std::function<bool(T,T)> compare, int lo
  * @tparam T data type of the \a std::vector elements
  * @return index of the pivot after partition
  */
-template<typename T>
+template<Comparable T>
 extern int randomisedPartition(std::vector<T> &v, std::function<bool(T,T)> compare, int low, int high);
 
 /*
@@ -107,7 +107,7 @@ extern int randomisedPartition(std::vector<T> &v, std::function<bool(T,T)> compa
  * @tparam T data type of the \a std::vector elements
  * @return none
  */
-template<typename T>
+template<Comparable T>
 extern void insertionSort(std::vector<T> &v, std::function<bool(T, T)> compare = sorting::increasingOrder<T>);
 
 
@@ -122,7 +122,7 @@ extern void insertionSort(std::vector<T> &v, std::function<bool(T, T)> compare =
  * @tparam T data type of the \a std::vector elements
  * @return none
  */
-template<typename T>
+template<Comparable T>
 extern void mergeSort(std::vector<T> &v, std::function<bool(T, T)> compare = sorting::increasingOrder<T>);
 
 
@@ -138,7 +138,7 @@ extern void mergeSort(std::vector<T> &v, std::function<bool(T, T)> compare = sor
  * @tparam T data type of the \a std::vector elements
  * @return none
  */
-template<typename T>
+template<Comparable T>
 extern void heapSort(std::vector<T> &v, std::function<bool(T, T)> compare = sorting::increasingOrder<T>);
 
 
@@ -153,7 +153,7 @@ extern void heapSort(std::vector<T> &v, std::function<bool(T, T)> compare = sort
  * @tparam T data type of the \a std::vector elements
  * @return none
  */
-template<typename T>
+template<Comparable T>
 extern void quickSort(std::vector<T> &v, std::function<bool(T, T)> compare = sorting::increasingOrder<T>);
 
 /**
@@ -167,7 +167,7 @@ extern void quickSort(std::vector<T> &v, std::function<bool(T, T)> compare = sor
  * @tparam T data type of the \a std::vector elements
  * @return none
  */
-template<typename T>
+template<Comparable T>
 extern void randomisedQuickSort(std::vector<T> &v, std::function<bool(T,T)> compare = sorting::increasingOrder<T>);
 
 #endif //ALGORITHMS_SORTING_HPP
