@@ -34,6 +34,19 @@ Heap<T>::Heap(std::vector<T> v, int t) {
 }
 
 template<typename T>
+Heap<T>::Heap(std::initializer_list<T> l, int t) {
+    arr = std::vector<T>(l);
+    if(t == heap::MIN_HEAP) {
+        compare = min_heap;
+        this->type = heap::MIN_HEAP;
+    } else {
+        compare = max_heap;
+        this->type = heap::MAX_HEAP;
+    }
+    build_heap();
+}
+
+template<typename T>
 Heap<T>::~Heap() {
     arr.clear();
 }

@@ -4,9 +4,9 @@
  * Constructors and Destructor
  */
 template<typename T> DynamicArray<T>::DynamicArray() {
-    len = 0;
-    capacity = 2;
     try {
+        len = 0;
+        capacity = 2;
         arr = new T[2];
     } catch(std::bad_alloc &e) {
         std::cerr << "Unable to allocate the array \n";
@@ -15,10 +15,24 @@ template<typename T> DynamicArray<T>::DynamicArray() {
 }
 
 template<typename T> DynamicArray<T>::DynamicArray(int sz){
-    len = 0;
-    capacity = sz;
     try {
+        len = 0;
+        capacity = sz;
         arr = new T[sz];
+    } catch(std::bad_alloc &e) {
+        std::cerr << "Unable to allocate the array \n";
+        throw std::bad_alloc();
+    }
+}
+
+template<typename T> DynamicArray<T>::DynamicArray(std::initializer_list<T> l) {
+    try {
+        len = 0;
+        capacity = l.size();
+        arr = new T[capacity];
+        for(const auto & val: l) {
+            add(val);
+        }
     } catch(std::bad_alloc &e) {
         std::cerr << "Unable to allocate the array \n";
         throw std::bad_alloc();
@@ -56,7 +70,7 @@ template<typename T> void DynamicArray<T>::decreaseCapacity() {
 /*
  * Public Functions
  */
-template<typename T> int DynamicArray<T>::size() noexcept{
+template<typename T> size_t DynamicArray<T>::size() noexcept{
     return len;
 }
 

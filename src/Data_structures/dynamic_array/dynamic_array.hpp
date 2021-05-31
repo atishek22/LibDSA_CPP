@@ -22,8 +22,8 @@ template<typename T>
 class DynamicArray {
 private:
     T *arr;
-    int len{};
-    int capacity{};
+    size_t len{};
+    size_t capacity{};
 
     void increaseCapacity();
     void decreaseCapacity();
@@ -45,6 +45,14 @@ public:
      */
     DynamicArray(int sz);
 
+    /**@brief Constructor
+     * @details Initialise the array with the \a std::initializer_list passed in.
+     * @param l initial list of values.
+     * @tparam T Data type for the array elements.
+     * @exception std::bad_alloc()
+     */
+    DynamicArray(std::initializer_list<T> l);
+
     /**@brief Destructor
      * @details Deallocates the memory assigned to the array.
      */
@@ -54,9 +62,9 @@ public:
      * @details Returns the number of elements in the array. 
      *
      * \f$O(1)\f$
-     * @return integer size of the array
+     * @return size of the array
      */
-    int size() noexcept;
+    size_t size() noexcept;
 
     /**@brief Checks if array is empty.
      * @details Returns \a true if the array is empty \a i.e. size() \f$ == 0\f$

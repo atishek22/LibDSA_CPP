@@ -4,4 +4,5 @@ add_library(
   ./dynamic_array/dynamic_array.cpp
   ./heap/heap.cpp
   ./priority_queue/priority_queue.cpp
+  ./stack/stack.cpp
   )

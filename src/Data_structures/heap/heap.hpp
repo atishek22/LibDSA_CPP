@@ -96,6 +96,15 @@ class Heap {
          */
         Heap(std::vector<T> v, int type);
 
+        /** @brief Constructor
+         * @details Create a heap object defined by \a type with the elements of \a std::initializer_list \a l.
+         *
+         * @param l std::initializer_list of initial elements
+         * @param type @ref heap constant defining the type of object to create
+         * @tparam T Data type for the heap elements
+         */
+        Heap(std::initializer_list<T> l, int type);
+
         /** @brief Destructor
          * @details Clears the heap's internal \a std::vector
          */

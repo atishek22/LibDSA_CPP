@@ -126,50 +126,52 @@ $(function() {
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        <a class="code" href="classHeap.html#ae58ddd11cd62c7c9843558c7cf21590b">Heap</a>(std::vector&lt;T&gt; v, <span class="keywordtype">int</span> type);</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        <a class="code" href="classHeap.html#a7887eec294f679fad13d8226ba7b3a44">~Heap</a>();</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
-<div class="line"><a name="l00110"></a><span class="lineno"><a class="line" href="classHeap.html#a416424472e149cc3a6f882770d9820e0">  110</a></span>&#160;        <span class="keywordtype">size_t</span> <a class="code" href="classHeap.html#a416424472e149cc3a6f882770d9820e0">size</a>() noexcept {</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;            <span class="keywordflow">return</span> arr.size();</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        }</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160; </div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        <span class="comment">/* Heap Opertions */</span></div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160; </div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classHeap.html#af7d81c6a7e77d248d141c7b3229bc481">heapify</a>(<span class="keywordtype">int</span> i);</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160; </div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classHeap.html#a5851e35b2be290134cb0e61e5f0b15cc">build_heap</a>();</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160; </div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classHeap.html#a1004c9fda75cf2b49e9592c4c7541be7">insert</a>(T data);</div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160; </div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;        T <a class="code" href="classHeap.html#afb2dd3ded6e2c4a505af82c8f3050b33">poll</a>();</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        <a class="code" href="classHeap.html#ae58ddd11cd62c7c9843558c7cf21590b">Heap</a>(std::initializer_list&lt;T&gt; l, <span class="keywordtype">int</span> type);</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; </div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        <a class="code" href="classHeap.html#a7887eec294f679fad13d8226ba7b3a44">~Heap</a>();</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160; </div>
+<div class="line"><a name="l00119"></a><span class="lineno"><a class="line" href="classHeap.html#a416424472e149cc3a6f882770d9820e0">  119</a></span>&#160;        <span class="keywordtype">size_t</span> <a class="code" href="classHeap.html#a416424472e149cc3a6f882770d9820e0">size</a>() noexcept {</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;            <span class="keywordflow">return</span> arr.size();</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        }</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160; </div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        <span class="comment">/* Heap Opertions */</span></div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160; </div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classHeap.html#af7d81c6a7e77d248d141c7b3229bc481">heapify</a>(<span class="keywordtype">int</span> i);</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160; </div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classHeap.html#a5851e35b2be290134cb0e61e5f0b15cc">build_heap</a>();</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160; </div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classHeap.html#a1004c9fda75cf2b49e9592c4c7541be7">insert</a>(T data);</div>
 <div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160; </div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;        T <a class="code" href="classHeap.html#ae590dcf5a45d967a1fa3091f342a6a97">peek</a>();</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160; </div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classHeap.html#a246915b5aef2da29de5fbdcb024cc174">remove</a>(T data);</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;        T <a class="code" href="classHeap.html#afb2dd3ded6e2c4a505af82c8f3050b33">poll</a>();</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160; </div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;        T <a class="code" href="classHeap.html#ae590dcf5a45d967a1fa3091f342a6a97">peek</a>();</div>
 <div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160; </div>
-<div class="line"><a name="l00173"></a><span class="lineno"><a class="line" href="classHeap.html#add95ed839c5b0839919c7c422b9040d1">  173</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classHeap.html#add95ed839c5b0839919c7c422b9040d1">clear</a>() noexcept{</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;            arr.clear();</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;        }</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160; </div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classHeap.html#a757083d4a4fac0af246182ee20a934dd">contains</a>(T element);</div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160; </div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classHeap.html#a442e43887732e031ca418789f503cdb2">modifyKey</a>(T oldKey, T newKey);</div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160; </div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;};</div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160; </div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;<span class="preprocessor">#endif </span><span class="comment">//DATA_STRUCTURES_HEAP_HPP</span></div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classHeap.html#a246915b5aef2da29de5fbdcb024cc174">remove</a>(T data);</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160; </div>
+<div class="line"><a name="l00182"></a><span class="lineno"><a class="line" href="classHeap.html#add95ed839c5b0839919c7c422b9040d1">  182</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classHeap.html#add95ed839c5b0839919c7c422b9040d1">clear</a>() noexcept{</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;            arr.clear();</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;        }</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160; </div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classHeap.html#a757083d4a4fac0af246182ee20a934dd">contains</a>(T element);</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160; </div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classHeap.html#a442e43887732e031ca418789f503cdb2">modifyKey</a>(T oldKey, T newKey);</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160; </div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;};</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160; </div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;<span class="preprocessor">#endif </span><span class="comment">//DATA_STRUCTURES_HEAP_HPP</span></div>
 <div class="ttc" id="aclassHeap_html"><div class="ttname"><a href="classHeap.html">Heap</a></div><div class="ttdoc">Template Heap Data Structure.</div><div class="ttdef"><b>Definition:</b> heap.hpp:50</div></div>
-<div class="ttc" id="aclassHeap_html_a1004c9fda75cf2b49e9592c4c7541be7"><div class="ttname"><a href="classHeap.html#a1004c9fda75cf2b49e9592c4c7541be7">Heap::insert</a></div><div class="ttdeci">bool insert(T data)</div><div class="ttdoc">Insert an element.</div><div class="ttdef"><b>Definition:</b> heap.cpp:107</div></div>
-<div class="ttc" id="aclassHeap_html_a246915b5aef2da29de5fbdcb024cc174"><div class="ttname"><a href="classHeap.html#a246915b5aef2da29de5fbdcb024cc174">Heap::remove</a></div><div class="ttdeci">bool remove(T data)</div><div class="ttdoc">Remove an element.</div><div class="ttdef"><b>Definition:</b> heap.cpp:134</div></div>
-<div class="ttc" id="aclassHeap_html_a416424472e149cc3a6f882770d9820e0"><div class="ttname"><a href="classHeap.html#a416424472e149cc3a6f882770d9820e0">Heap::size</a></div><div class="ttdeci">size_t size() noexcept</div><div class="ttdoc">Size of the heap.</div><div class="ttdef"><b>Definition:</b> heap.hpp:110</div></div>
-<div class="ttc" id="aclassHeap_html_a442e43887732e031ca418789f503cdb2"><div class="ttname"><a href="classHeap.html#a442e43887732e031ca418789f503cdb2">Heap::modifyKey</a></div><div class="ttdeci">bool modifyKey(T oldKey, T newKey)</div><div class="ttdoc">Modify element.</div><div class="ttdef"><b>Definition:</b> heap.cpp:150</div></div>
-<div class="ttc" id="aclassHeap_html_a5851e35b2be290134cb0e61e5f0b15cc"><div class="ttname"><a href="classHeap.html#a5851e35b2be290134cb0e61e5f0b15cc">Heap::build_heap</a></div><div class="ttdeci">void build_heap()</div><div class="ttdoc">Build the heap.</div><div class="ttdef"><b>Definition:</b> heap.cpp:100</div></div>
-<div class="ttc" id="aclassHeap_html_a757083d4a4fac0af246182ee20a934dd"><div class="ttname"><a href="classHeap.html#a757083d4a4fac0af246182ee20a934dd">Heap::contains</a></div><div class="ttdeci">bool contains(T element)</div><div class="ttdoc">Check element.</div><div class="ttdef"><b>Definition:</b> heap.cpp:143</div></div>
-<div class="ttc" id="aclassHeap_html_a7887eec294f679fad13d8226ba7b3a44"><div class="ttname"><a href="classHeap.html#a7887eec294f679fad13d8226ba7b3a44">Heap::~Heap</a></div><div class="ttdeci">~Heap()</div><div class="ttdoc">Destructor.</div><div class="ttdef"><b>Definition:</b> heap.cpp:37</div></div>
-<div class="ttc" id="aclassHeap_html_add95ed839c5b0839919c7c422b9040d1"><div class="ttname"><a href="classHeap.html#add95ed839c5b0839919c7c422b9040d1">Heap::clear</a></div><div class="ttdeci">void clear() noexcept</div><div class="ttdoc">Clear the heap.</div><div class="ttdef"><b>Definition:</b> heap.hpp:173</div></div>
+<div class="ttc" id="aclassHeap_html_a1004c9fda75cf2b49e9592c4c7541be7"><div class="ttname"><a href="classHeap.html#a1004c9fda75cf2b49e9592c4c7541be7">Heap::insert</a></div><div class="ttdeci">bool insert(T data)</div><div class="ttdoc">Insert an element.</div><div class="ttdef"><b>Definition:</b> heap.cpp:120</div></div>
+<div class="ttc" id="aclassHeap_html_a246915b5aef2da29de5fbdcb024cc174"><div class="ttname"><a href="classHeap.html#a246915b5aef2da29de5fbdcb024cc174">Heap::remove</a></div><div class="ttdeci">bool remove(T data)</div><div class="ttdoc">Remove an element.</div><div class="ttdef"><b>Definition:</b> heap.cpp:147</div></div>
+<div class="ttc" id="aclassHeap_html_a416424472e149cc3a6f882770d9820e0"><div class="ttname"><a href="classHeap.html#a416424472e149cc3a6f882770d9820e0">Heap::size</a></div><div class="ttdeci">size_t size() noexcept</div><div class="ttdoc">Size of the heap.</div><div class="ttdef"><b>Definition:</b> heap.hpp:119</div></div>
+<div class="ttc" id="aclassHeap_html_a442e43887732e031ca418789f503cdb2"><div class="ttname"><a href="classHeap.html#a442e43887732e031ca418789f503cdb2">Heap::modifyKey</a></div><div class="ttdeci">bool modifyKey(T oldKey, T newKey)</div><div class="ttdoc">Modify element.</div><div class="ttdef"><b>Definition:</b> heap.cpp:163</div></div>
+<div class="ttc" id="aclassHeap_html_a5851e35b2be290134cb0e61e5f0b15cc"><div class="ttname"><a href="classHeap.html#a5851e35b2be290134cb0e61e5f0b15cc">Heap::build_heap</a></div><div class="ttdeci">void build_heap()</div><div class="ttdoc">Build the heap.</div><div class="ttdef"><b>Definition:</b> heap.cpp:113</div></div>
+<div class="ttc" id="aclassHeap_html_a757083d4a4fac0af246182ee20a934dd"><div class="ttname"><a href="classHeap.html#a757083d4a4fac0af246182ee20a934dd">Heap::contains</a></div><div class="ttdeci">bool contains(T element)</div><div class="ttdoc">Check element.</div><div class="ttdef"><b>Definition:</b> heap.cpp:156</div></div>
+<div class="ttc" id="aclassHeap_html_a7887eec294f679fad13d8226ba7b3a44"><div class="ttname"><a href="classHeap.html#a7887eec294f679fad13d8226ba7b3a44">Heap::~Heap</a></div><div class="ttdeci">~Heap()</div><div class="ttdoc">Destructor.</div><div class="ttdef"><b>Definition:</b> heap.cpp:50</div></div>
+<div class="ttc" id="aclassHeap_html_add95ed839c5b0839919c7c422b9040d1"><div class="ttname"><a href="classHeap.html#add95ed839c5b0839919c7c422b9040d1">Heap::clear</a></div><div class="ttdeci">void clear() noexcept</div><div class="ttdoc">Clear the heap.</div><div class="ttdef"><b>Definition:</b> heap.hpp:182</div></div>
 <div class="ttc" id="aclassHeap_html_ae58ddd11cd62c7c9843558c7cf21590b"><div class="ttname"><a href="classHeap.html#ae58ddd11cd62c7c9843558c7cf21590b">Heap::Heap</a></div><div class="ttdeci">Heap()</div><div class="ttdoc">Default constructor.</div><div class="ttdef"><b>Definition:</b> heap.cpp:7</div></div>
-<div class="ttc" id="aclassHeap_html_ae590dcf5a45d967a1fa3091f342a6a97"><div class="ttname"><a href="classHeap.html#ae590dcf5a45d967a1fa3091f342a6a97">Heap::peek</a></div><div class="ttdeci">T peek()</div><div class="ttdoc">Get the root's value.</div><div class="ttdef"><b>Definition:</b> heap.cpp:129</div></div>
-<div class="ttc" id="aclassHeap_html_af7d81c6a7e77d248d141c7b3229bc481"><div class="ttname"><a href="classHeap.html#af7d81c6a7e77d248d141c7b3229bc481">Heap::heapify</a></div><div class="ttdeci">void heapify(int i)</div><div class="ttdoc">Float down the value to maintain the heap invariant.</div><div class="ttdef"><b>Definition:</b> heap.cpp:95</div></div>
-<div class="ttc" id="aclassHeap_html_afb2dd3ded6e2c4a505af82c8f3050b33"><div class="ttname"><a href="classHeap.html#afb2dd3ded6e2c4a505af82c8f3050b33">Heap::poll</a></div><div class="ttdeci">T poll()</div><div class="ttdoc">Remove the root element.</div><div class="ttdef"><b>Definition:</b> heap.cpp:114</div></div>
+<div class="ttc" id="aclassHeap_html_ae590dcf5a45d967a1fa3091f342a6a97"><div class="ttname"><a href="classHeap.html#ae590dcf5a45d967a1fa3091f342a6a97">Heap::peek</a></div><div class="ttdeci">T peek()</div><div class="ttdoc">Get the root's value.</div><div class="ttdef"><b>Definition:</b> heap.cpp:142</div></div>
+<div class="ttc" id="aclassHeap_html_af7d81c6a7e77d248d141c7b3229bc481"><div class="ttname"><a href="classHeap.html#af7d81c6a7e77d248d141c7b3229bc481">Heap::heapify</a></div><div class="ttdeci">void heapify(int i)</div><div class="ttdoc">Float down the value to maintain the heap invariant.</div><div class="ttdef"><b>Definition:</b> heap.cpp:108</div></div>
+<div class="ttc" id="aclassHeap_html_afb2dd3ded6e2c4a505af82c8f3050b33"><div class="ttname"><a href="classHeap.html#afb2dd3ded6e2c4a505af82c8f3050b33">Heap::poll</a></div><div class="ttdeci">T poll()</div><div class="ttdoc">Remove the root element.</div><div class="ttdef"><b>Definition:</b> heap.cpp:127</div></div>
 <div class="ttc" id="anamespaceheap_html"><div class="ttname"><a href="namespaceheap.html">heap</a></div><div class="ttdoc">Heap constants.</div></div>
 <div class="ttc" id="anamespaceheap_html_a455af8cc8e14d11406f10addfebd0eca"><div class="ttname"><a href="namespaceheap.html#a455af8cc8e14d11406f10addfebd0eca">heap::MAX_HEAP</a></div><div class="ttdeci">const int MAX_HEAP</div><div class="ttdoc">Constant for creating a MaxHeap Object.</div><div class="ttdef"><b>Definition:</b> heap.hpp:23</div></div>
 <div class="ttc" id="anamespaceheap_html_aa80593a95da8ebd387e3fb147822716f"><div class="ttname"><a href="namespaceheap.html#aa80593a95da8ebd387e3fb147822716f">heap::MIN_HEAP</a></div><div class="ttdeci">const int MIN_HEAP</div><div class="ttdoc">Constant for creating a MinHeap Object.</div><div class="ttdef"><b>Definition:</b> heap.hpp:26</div></div>
