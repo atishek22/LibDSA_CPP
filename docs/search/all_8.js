@@ -1,13 +1,9 @@
 var searchData=
 [
-  ['max_5fheap_30',['MAX_HEAP',['../namespaceheap.html#a455af8cc8e14d11406f10addfebd0eca',1,'heap']]],
-  ['max_5fsubarray_5fsum_31',['max_subarray_sum',['../max__subarray__sum_8hpp.html#a3950e054f87049f6e387f74a50a633d2',1,'max_subarray_sum.cpp']]],
-  ['max_5fsubarray_5fsum_2ehpp_32',['max_subarray_sum.hpp',['../max__subarray__sum_8hpp.html',1,'']]],
-  ['max_5fsubarray_5fsum_5ffast_33',['max_subarray_sum_fast',['../max__subarray__sum_8hpp.html#a68337c64f3d93d19002563607d3fc597',1,'max_subarray_sum.cpp']]],
-  ['maxval_34',['maxVal',['../order__statistics_8hpp.html#a37b91c7a5a39be9c23db7d7ad0cd7ac1',1,'order_statistics.cpp']]],
-  ['mergesort_35',['mergeSort',['../sorting_8hpp.html#a915fc71449b6505ddd0cb65057265977',1,'sorting.cpp']]],
-  ['min_5fheap_36',['MIN_HEAP',['../namespaceheap.html#aa80593a95da8ebd387e3fb147822716f',1,'heap']]],
-  ['minmaxval_37',['minmaxVal',['../order__statistics_8hpp.html#a7cc62888da49cc6a87fb1d7a6ff5db42',1,'order_statistics.cpp']]],
-  ['minval_38',['minVal',['../order__statistics_8hpp.html#a49c05c10b68f8f6bcc186f43ad105791',1,'order_statistics.cpp']]],
-  ['modifykey_39',['modifyKey',['../classHeap.html#a442e43887732e031ca418789f503cdb2',1,'Heap']]]
+  ['increasing_5forder_27',['INCREASING_ORDER',['../namespacelinear__sorting.html#a8bd7cae790a76fb36323f39db4da911c',1,'linear_sorting']]],
+  ['increasingorder_28',['increasingOrder',['../namespacesorting.html#a7ac0db6b02621f8df053149ab1a3d755',1,'sorting']]],
+  ['indexof_29',['indexOf',['../classDynamicArray.html#a0b0837aa5593fb8ff964572c043ff4d0',1,'DynamicArray']]],
+  ['insert_30',['insert',['../classHeap.html#a1004c9fda75cf2b49e9592c4c7541be7',1,'Heap']]],
+  ['insertionsort_31',['insertionSort',['../sorting_8hpp.html#a11890b83f326e3a52513e4fe16686124',1,'sorting.cpp']]],
+  ['isempty_32',['isEmpty',['../classDynamicArray.html#ad37bad983acf4e1c96ae7d60492a6758',1,'DynamicArray::isEmpty()'],['../classStack.html#a3dd6e933751afd4aaf80db998b3099e4',1,'Stack::isEmpty()']]]
 ];

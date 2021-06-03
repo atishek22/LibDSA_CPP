@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['decreasing_5forder_129',['DECREASING_ORDER',['../namespacelinear__sorting.html#a776e6b10ceb43a5bcc5457fe3941fb2e',1,'linear_sorting']]],
-  ['decreasingorder_130',['decreasingOrder',['../namespacesorting.html#a4ef6c3a485f05a85ba7e2e6b5a9a5409',1,'sorting']]]
+  ['arithmetic_148',['arithmetic',['../max__subarray__sum_8hpp.html#ae4de4baf3026a8895e06ea93937af7a5',1,'max_subarray_sum.hpp']]]
 ];

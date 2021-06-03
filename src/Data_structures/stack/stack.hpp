@@ -74,6 +74,17 @@ public:
      */
     bool isEmpty() noexcept;
 
+    /**@brief Clear the stack
+     * @details Clears the stack array
+     * @exception std::runtime_error
+     */
+    void clear() {
+        try {
+            stack->clear();
+        } catch(const std::bad_alloc &e) {
+            throw std::runtime_error("Unable to clear the Stack");
+        }
+    }
 };
 
 #endif //DATA_STRUCTURES_STACK_HPP

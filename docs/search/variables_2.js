@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['lengthorder_133',['lengthOrder',['../namespacesorting.html#a9fc59e76491c20cd16cb18b2a6c1d476',1,'sorting']]]
+  ['decreasing_5forder_151',['DECREASING_ORDER',['../namespacelinear__sorting.html#a776e6b10ceb43a5bcc5457fe3941fb2e',1,'linear_sorting']]],
+  ['decreasingorder_152',['decreasingOrder',['../namespacesorting.html#a4ef6c3a485f05a85ba7e2e6b5a9a5409',1,'sorting']]]
 ];

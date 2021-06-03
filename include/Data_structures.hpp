@@ -14,4 +14,7 @@
 #include"../src/Data_structures/stack/stack.hpp"
 #include"../src/Data_structures/stack/stack.cpp"
 
+#include"../src/Data_structures/queue/queue.hpp"
+#include"../src/Data_structures/queue/queue.cpp"
+
 //#endif //DATA_STRUCTURES_DS_HPP

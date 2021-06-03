@@ -1,10 +1,6 @@
 var searchData=
 [
-  ['max_5fsubarray_5fsum_100',['max_subarray_sum',['../max__subarray__sum_8hpp.html#a3950e054f87049f6e387f74a50a633d2',1,'max_subarray_sum.cpp']]],
-  ['max_5fsubarray_5fsum_5ffast_101',['max_subarray_sum_fast',['../max__subarray__sum_8hpp.html#a68337c64f3d93d19002563607d3fc597',1,'max_subarray_sum.cpp']]],
-  ['maxval_102',['maxVal',['../order__statistics_8hpp.html#a37b91c7a5a39be9c23db7d7ad0cd7ac1',1,'order_statistics.cpp']]],
-  ['mergesort_103',['mergeSort',['../sorting_8hpp.html#a915fc71449b6505ddd0cb65057265977',1,'sorting.cpp']]],
-  ['minmaxval_104',['minmaxVal',['../order__statistics_8hpp.html#a7cc62888da49cc6a87fb1d7a6ff5db42',1,'order_statistics.cpp']]],
-  ['minval_105',['minVal',['../order__statistics_8hpp.html#a49c05c10b68f8f6bcc186f43ad105791',1,'order_statistics.cpp']]],
-  ['modifykey_106',['modifyKey',['../classHeap.html#a442e43887732e031ca418789f503cdb2',1,'Heap']]]
+  ['heap_110',['Heap',['../classHeap.html#ae58ddd11cd62c7c9843558c7cf21590b',1,'Heap::Heap()'],['../classHeap.html#a8c227d16e4b2d791726a1c59b2265c7f',1,'Heap::Heap(int type)'],['../classHeap.html#a748dc5ac4539370470df6c315042c4a8',1,'Heap::Heap(std::vector&lt; T &gt; v, int type)'],['../classHeap.html#a170a656403603b2c508363e2f95ed4f7',1,'Heap::Heap(std::initializer_list&lt; T &gt; l, int type)']]],
+  ['heapify_111',['heapify',['../classHeap.html#af7d81c6a7e77d248d141c7b3229bc481',1,'Heap']]],
+  ['heapsort_112',['heapSort',['../sorting_8hpp.html#a015779ec37ded61504f5d82616a15a74',1,'sorting.cpp']]]
 ];

@@ -1,7 +1,9 @@
 var searchData=
 [
-  ['left_26',['LEFT',['../heap_8hpp.html#a25d5ae2e52c533b5f27895fcf7a4ea95',1,'heap.hpp']]],
-  ['lengthorder_27',['lengthOrder',['../namespacesorting.html#a9fc59e76491c20cd16cb18b2a6c1d476',1,'sorting']]],
-  ['linear_5fsorting_28',['linear_sorting',['../namespacelinear__sorting.html',1,'']]],
-  ['linear_5fsorting_2ehpp_29',['linear_sorting.hpp',['../linear__sorting_8hpp.html',1,'']]]
+  ['heap_21',['Heap',['../classHeap.html',1,'']]],
+  ['heap_22',['heap',['../namespaceheap.html',1,'']]],
+  ['heap_23',['Heap',['../classHeap.html#ae58ddd11cd62c7c9843558c7cf21590b',1,'Heap::Heap()'],['../classHeap.html#a8c227d16e4b2d791726a1c59b2265c7f',1,'Heap::Heap(int type)'],['../classHeap.html#a748dc5ac4539370470df6c315042c4a8',1,'Heap::Heap(std::vector&lt; T &gt; v, int type)'],['../classHeap.html#a170a656403603b2c508363e2f95ed4f7',1,'Heap::Heap(std::initializer_list&lt; T &gt; l, int type)']]],
+  ['heap_2ehpp_24',['heap.hpp',['../heap_8hpp.html',1,'']]],
+  ['heapify_25',['heapify',['../classHeap.html#af7d81c6a7e77d248d141c7b3229bc481',1,'Heap']]],
+  ['heapsort_26',['heapSort',['../sorting_8hpp.html#a015779ec37ded61504f5d82616a15a74',1,'sorting.cpp']]]
 ];

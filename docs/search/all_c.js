@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['quicksort_51',['quickSort',['../sorting_8hpp.html#a6f89630da43d212e293f8be9de864a00',1,'sorting.cpp']]]
+  ['operator_5b_5d_48',['operator[]',['../classDynamicArray.html#ac409cee6ae68e0cff29b9b597e1a08c2',1,'DynamicArray']]],
+  ['order_5fstatistics_2ehpp_49',['order_statistics.hpp',['../order__statistics_8hpp.html',1,'']]]
 ];

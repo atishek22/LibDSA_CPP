@@ -33,6 +33,7 @@ bool Stack<T>::pop() {
     if(isEmpty()) throw std::runtime_error("Stack is empty");
     try {
         bool ret = stack->removeAt(_top--);
+        return ret;
     } catch(std::runtime_error &e) {
         throw std::runtime_error("Unable to pop the stack");
     }

@@ -146,7 +146,6 @@ function SearchBox(name, resultsPath, inFrame, label, extension)
       // show search selection popup
       searchSelectWindow.style.display='block';
       left -= searchSelectWindow.offsetWidth;
-      if (left<10) left=10;
       searchSelectWindow.style.left =  left + 'px';
       searchSelectWindow.style.top  =  top  + 'px';
     }
@@ -384,7 +383,6 @@ function SearchBox(name, resultsPath, inFrame, label, extension)
          var top  = getYPos(domSearchBox) + 20;  // domSearchBox.offsetHeight + 1;
          domPopupSearchResultsWindow.style.display = 'block';
          left -= domPopupSearchResults.offsetWidth;
-         if (left<10) left=10;
          domPopupSearchResultsWindow.style.top     = top  + 'px';
          domPopupSearchResultsWindow.style.left    = left + 'px';
        }

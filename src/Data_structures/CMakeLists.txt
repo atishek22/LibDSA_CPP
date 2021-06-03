@@ -5,4 +5,5 @@ add_library(
   ./heap/heap.cpp
   ./priority_queue/priority_queue.cpp
   ./stack/stack.cpp
+  ./queue/queue.cpp
   )

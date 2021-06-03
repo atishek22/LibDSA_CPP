@@ -9,11 +9,15 @@
 
 int main() {
     srand(0);
-    Stack<int> s{10, 8, 10, 12 ,14};
-    int len = s.size();
-    for(int i = 0; i < len; i++) {
-        std::cout << s.top() << " ";
-        s.pop();
+    Queue<int> s;
+    for(int i = 0; i < 10; i++) {
+        s.enqueue(i);
     }
+    s.clear();
+    s.enqueue(10);
+    while(!s.empty()) {
+        std::cout << s.dequeue() <<" ";
+    }
+    std::cout << "\n";
     return 0;
 }

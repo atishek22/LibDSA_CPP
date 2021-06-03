@@ -1,2 +1,3 @@
 build
-.cach
+.cache
+compile_commands.json
