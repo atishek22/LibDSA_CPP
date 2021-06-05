@@ -6,4 +6,5 @@ add_library(
   ./priority_queue/priority_queue.cpp
   ./stack/stack.cpp
   ./queue/queue.cpp
+  ./linked_list/linked_list.cpp
   )

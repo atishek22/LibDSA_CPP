@@ -30,11 +30,11 @@ public:
 
     /**@brief Constructor
      * @details Initialise the Stack object with the /a std::initializer_list elements
-     * @param l \a std::initializer_list of initial elements
+     * @param _list \a std::initializer_list of initial elements
      * @tparam T Data type of the stack elements
      * @exception std::bad_alloc
      */
-    Stack(std::initializer_list<T> l);
+    Stack(std::initializer_list<T> _list);
 
     /**@brief Destructor
      * @details Clear the stack object

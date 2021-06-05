@@ -50,7 +50,7 @@ extern std::vector<T> countingSort(std::vector<T> v, T maximum , int compareFlag
  * @return Sorted vector
  */
 template<std::integral T>
-extern std::vector<T> radixSort(std::vector<T> v, int digits, int maximum = 9, int compareFlag = linear_sorting::INCREASING_ORDER);
+extern std::vector<T> radixSort(std::vector<T> v, int digit, int maximum = 9, int compareFlag = linear_sorting::INCREASING_ORDER);
 
 /** @brief Normalise the \a std::vector for bucketSort()
  * @details Normalises the value in the vector to the range \f$[0,1)\f$
@@ -59,6 +59,7 @@ extern std::vector<T> radixSort(std::vector<T> v, int digits, int maximum = 9, i
  *
  *\f$O(n)\f$
  * @param v \a std::vector of values to be normalised
+ * @param compute custom normalisation method
  * @tparam T Data type of the \a std::vector element - should be floating point
  */
 //TODO(Implement the function and compute callback function)

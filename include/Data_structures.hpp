@@ -17,4 +17,7 @@
 #include"../src/Data_structures/queue/queue.hpp"
 #include"../src/Data_structures/queue/queue.cpp"
 
+#include"../src/Data_structures/linked_list/linked_list.hpp"
+#include"../src/Data_structures/linked_list/linked_list.cpp"
+
 //#endif //DATA_STRUCTURES_DS_HPP

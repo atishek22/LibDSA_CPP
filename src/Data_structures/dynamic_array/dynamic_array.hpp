@@ -47,11 +47,11 @@ public:
 
     /**@brief Constructor
      * @details Initialise the array with the \a std::initializer_list passed in.
-     * @param l initial list of values.
+     * @param _list initial list of values.
      * @tparam T Data type for the array elements.
      * @exception std::bad_alloc()
      */
-    DynamicArray(std::initializer_list<T> l);
+    DynamicArray(std::initializer_list<T> _list);
 
     /**@brief Destructor
      * @details Deallocates the memory assigned to the array.

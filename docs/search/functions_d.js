@@ -1,5 +1,11 @@
 var searchData=
 [
-  ['queue_132',['Queue',['../classQueue.html#af73bb29c868f7b37f369c668f114bd9f',1,'Queue::Queue()'],['../classQueue.html#a696bd9468635798d7fcb3a1152569c74',1,'Queue::Queue(size_t sz)'],['../classQueue.html#a3e1bc1cef9330decce09eab7527c6d85',1,'Queue::Queue(std::initializer_list&lt; T &gt; l)']]],
-  ['quicksort_133',['quickSort',['../sorting_8hpp.html#a6f89630da43d212e293f8be9de864a00',1,'sorting.cpp']]]
+  ['partition_148',['partition',['../sorting_8hpp.html#a13f0639535a4f11deaee14058848d44f',1,'sorting.cpp']]],
+  ['peek_149',['peek',['../classHeap.html#ae590dcf5a45d967a1fa3091f342a6a97',1,'Heap']]],
+  ['peek_5ffirst_150',['peek_first',['../classLinkedList.html#a14a371bc435839e9074141d489ca6e3e',1,'LinkedList']]],
+  ['peek_5flast_151',['peek_last',['../classLinkedList.html#a21924c91ab7ec0d8833759db29069e66',1,'LinkedList']]],
+  ['poll_152',['poll',['../classHeap.html#afb2dd3ded6e2c4a505af82c8f3050b33',1,'Heap']]],
+  ['pop_153',['pop',['../classStack.html#a2cbafb4f2dcc4a8a27d661004e937f80',1,'Stack']]],
+  ['print_154',['print',['../classDynamicArray.html#ac308a97a56515d5c03fe79909fbac483',1,'DynamicArray']]],
+  ['push_155',['push',['../classStack.html#a2d11b97a239f5ea85a6ca61fe6c1376b',1,'Stack']]]
 ];

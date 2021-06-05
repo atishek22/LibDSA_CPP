@@ -1,7 +1,11 @@
 var searchData=
 [
-  ['selectelement_139',['selectElement',['../order__statistics_8hpp.html#aca8536a3f5c37b6171f6692008661ab2',1,'order_statistics.cpp']]],
-  ['set_140',['set',['../classDynamicArray.html#a2bac161b54d36b1dd96d628d7f6fda37',1,'DynamicArray']]],
-  ['size_141',['size',['../classDynamicArray.html#aaffe737edf8ce3e649726d8b44418ba8',1,'DynamicArray::size()'],['../classHeap.html#a416424472e149cc3a6f882770d9820e0',1,'Heap::size()'],['../classQueue.html#aa2786035bdeb5eea517538d6e3ae7f1a',1,'Queue::size()'],['../classStack.html#a86ad030da27d2b9c44df4954aa48bac2',1,'Stack::size() noexcept']]],
-  ['stack_142',['Stack',['../classStack.html#aefee698059467258bbd79045aca62a63',1,'Stack::Stack()'],['../classStack.html#aebe3ac2d4d9400f01b50ff3ee6f5f42a',1,'Stack::Stack(std::initializer_list&lt; T &gt; l)']]]
+  ['radixsort_158',['radixSort',['../linear__sorting_8hpp.html#a22b38c83cba82f22ed6c1ef892e9798b',1,'linear_sorting.cpp']]],
+  ['randomisedpartition_159',['randomisedPartition',['../sorting_8hpp.html#ad4efff75a3b4beb4af0d919ec2677e90',1,'sorting.cpp']]],
+  ['randomisedquicksort_160',['randomisedQuickSort',['../sorting_8hpp.html#a93ca0703922e23aabf4223ce2e1af426',1,'sorting.cpp']]],
+  ['remove_161',['remove',['../classDynamicArray.html#af5505d5a461d7505de89821c0468c7b7',1,'DynamicArray::remove()'],['../classHeap.html#a246915b5aef2da29de5fbdcb024cc174',1,'Heap::remove()'],['../classLinkedList.html#a9f1f5a41db06628b4e2faf22005c04ed',1,'LinkedList::remove(T element)']]],
+  ['remove_5fat_162',['remove_at',['../classLinkedList.html#ab374153f182473b000da9fc96321d53d',1,'LinkedList']]],
+  ['remove_5ffirst_163',['remove_first',['../classLinkedList.html#a337a39f0942404d5b8a988b281c58a4d',1,'LinkedList']]],
+  ['remove_5flast_164',['remove_last',['../classLinkedList.html#a3a37942d7f62a89cf71b2aac5c5aa071',1,'LinkedList']]],
+  ['removeat_165',['removeAt',['../classDynamicArray.html#a13fbcee4f6aeaafd71f72f2a7f488611',1,'DynamicArray']]]
 ];

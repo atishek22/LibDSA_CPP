@@ -43,11 +43,11 @@ public:
 
     /**@brief Constructor
      * @details Create a queue object with the elements of the \a std::initializer_list
-     * @param l initial list of elements
+     * @param _list initial list of elements
      * @tparam T Data type of the Queue element
      * @exception std::bad_alloc
      */
-    Queue(std::initializer_list<T> l);
+    Queue(std::initializer_list<T> _list);
 
     /**@brief Destructor
      * @details Clears the queue
