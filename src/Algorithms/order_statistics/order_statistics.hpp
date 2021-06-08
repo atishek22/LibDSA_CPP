@@ -8,7 +8,10 @@
 #ifndef ALGORITHMS_ORDER_STATISTICS_HPP
 #define ALGORITHMS_ORDER_STATISTICS_HPP
 
-#include<bits/stdc++.h>
+#include<vector>
+#include<tuple>
+#include<stdexcept>
+
 #include"../sorting/sorting.hpp"
 #include"../../Utils/comparable.hpp"
 

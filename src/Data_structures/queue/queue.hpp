@@ -8,7 +8,12 @@
 #ifndef DATA_STRUCTURES_QUEUE_HPP
 #define DATA_STRUCTURES_QUEUE_HPP
 
-#include<bits/stdc++.h>
+#include<stdexcept>
+#include<stddef.h>
+#include<initializer_list>
+#include<iostream>
+
+
 /**@brief Queue Data Structure Implementation
  * @details Dynamically resizing Queue data structure using static arrays
  * @tparam T Data type of the Queue elements

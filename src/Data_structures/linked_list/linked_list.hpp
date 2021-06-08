@@ -7,7 +7,10 @@
 #ifndef DATA_STRUCTURES_LINKED_LISTS
 #define DATA_STRUCTURES_LINKED_LISTS
 
-#include<bits/stdc++.h>
+#include<stddef.h>
+#include<initializer_list>
+#include<stdexcept>
+#include<iostream>
 
 //TODO - Iterator implementation
 

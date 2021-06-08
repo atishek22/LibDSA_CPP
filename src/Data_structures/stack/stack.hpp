@@ -8,7 +8,8 @@
 #ifndef DATA_STRUCTURES_STACK_HPP
 #define DATA_STRUCTURES_STACK_HPP
 
-#include<bits/stdc++.h>
+#include<stdexcept>
+
 #include"../dynamic_array/dynamic_array.hpp"
 
 /**@brief Stack Data Structure Implementation

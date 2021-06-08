@@ -10,7 +10,10 @@
 #ifndef ALGORITHMS_SORTING_HPP
 #define ALGORITHMS_SORTING_HPP
 
-#include<bits/stdc++.h>
+#include<vector>
+#include<functional>
+#include<random>
+
 #include"../../Utils/comparable.hpp"
 #include"../../Data_structures/heap/heap.hpp"
 

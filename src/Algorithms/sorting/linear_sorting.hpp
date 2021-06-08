@@ -9,7 +9,9 @@
 #ifndef ALGORITHMS_LINEAR_SORTING_HPP
 #define ALGORITHMS_LINEAR_SORTING_HPP
 
-#include<bits/stdc++.h>
+#include<vector>
+#include<concepts>
+
 #include"sorting.hpp"
 
 /**@namespace linear_sorting

@@ -9,7 +9,10 @@
 #ifndef DATA_STRUCTURES_DYNAMICARRAY_HPP
 #define DATA_STRUCTURES_DYNAMICARRAY_HPP
 
-#include<bits/stdc++.h>
+#include<stddef.h>
+#include<initializer_list>
+#include<stdexcept>
+#include<iostream>
 
 //TODO(std::initializer_list integratiion)
 

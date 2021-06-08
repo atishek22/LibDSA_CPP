@@ -11,8 +11,10 @@
 #ifndef ALGORITHMS_MAX_SUBARRAY_SUM_HPP
 #define ALGORITHMS_MAX_SUBARRAY_SUM_HPP
 
-
-#include<bits/stdc++.h>
+#include<concepts>
+#include<vector>
+#include<tuple>
+#include<algorithm>
 
 /** @brief Arithmetic concept
  * @details Template specialisation for arithmetic (numerical) types. 

@@ -6,7 +6,7 @@
 #ifndef DSA_COMPARABLE_HPP
 #define DSA_COMPARABLE_HPP
 
-#include<bits/stdc++.h>
+#include<concepts>
 
 /**@brief Comparable concept
  * @details Concept defining template objects that are comparable

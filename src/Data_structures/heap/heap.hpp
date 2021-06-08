@@ -9,7 +9,9 @@
 #ifndef DATA_STRUCTURES_HEAP_HPP
 #define DATA_STRUCTURES_HEAP_HPP
 
-#include<bits/stdc++.h>
+#include<vector>
+#include<functional>
+#include<initializer_list>
 
 //TODO(std::initializer_list integration)
 

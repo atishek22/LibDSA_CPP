@@ -1,7 +1,9 @@
 #ifndef DATA_STRUCTURES_PRIORITY_QUEUE_HPP
 #define DATA_STRUCTURES_PRIORITY_QUEUE_HPP
 
-#include<bits/stdc++.h>
+#include<vector>
+#include<functional>
+#include<stdexcept>
 
 /*
  * Priority Queue implementation using std::vector
