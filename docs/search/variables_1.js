@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['increasing_5forder_181',['INCREASING_ORDER',['../namespacelinear__sorting.html#a8bd7cae790a76fb36323f39db4da911c',1,'linear_sorting']]],
-  ['increasingorder_182',['increasingOrder',['../namespacesorting.html#a7ac0db6b02621f8df053149ab1a3d755',1,'sorting']]]
+  ['heap_5fdecreasing_183',['HEAP_DECREASING',['../namespacesorting.html#a578a71d62cc3f443cd37865515db38ab',1,'sorting']]],
+  ['heap_5fincreasing_184',['HEAP_INCREASING',['../namespacesorting.html#aceffd480e59b42f487845a9d2b6767a6',1,'sorting']]]
 ];

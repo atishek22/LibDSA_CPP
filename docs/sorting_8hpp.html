@@ -84,7 +84,9 @@ $(function() {
 
 <p>Sorting Algorithms.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &lt;bits/stdc++.h&gt;</code><br />
+<div class="textblock"><code>#include &lt;vector&gt;</code><br />
+<code>#include &lt;functional&gt;</code><br />
+<code>#include &lt;random&gt;</code><br />
 <code>#include &quot;<a class="el" href="comparable_8hpp_source.html">../../Utils/comparable.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="heap_8hpp_source.html">../../Data_structures/heap/heap.hpp</a>&quot;</code><br />
 </div>
@@ -116,14 +118,14 @@ Functions</h2></td></tr>
 <tr class="memitem:a11890b83f326e3a52513e4fe16686124"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="sorting_8hpp.html#a11890b83f326e3a52513e4fe16686124">insertionSort</a> (std::vector&lt; T &gt; &amp;v, std::function&lt; bool(T, T)&gt; compare=<a class="el" href="namespacesorting.html#a7ac0db6b02621f8df053149ab1a3d755">sorting::increasingOrder</a>&lt; T &gt;)</td></tr>
 <tr class="memdesc:a11890b83f326e3a52513e4fe16686124"><td class="mdescLeft">&#160;</td><td class="mdescRight">Insertion Sort.  <a href="sorting_8hpp.html#a11890b83f326e3a52513e4fe16686124">More...</a><br /></td></tr>
 <tr class="separator:a11890b83f326e3a52513e4fe16686124"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a915fc71449b6505ddd0cb65057265977"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="conceptComparable.html">Comparable</a> T&gt; </td></tr>
-<tr class="memitem:a915fc71449b6505ddd0cb65057265977"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="sorting_8hpp.html#a915fc71449b6505ddd0cb65057265977">mergeSort</a> (std::vector&lt; T &gt; &amp;v, std::function&lt; bool(T, T)&gt; compare=<a class="el" href="namespacesorting.html#a7ac0db6b02621f8df053149ab1a3d755">sorting::increasingOrder</a>&lt; T &gt;)</td></tr>
-<tr class="memdesc:a915fc71449b6505ddd0cb65057265977"><td class="mdescLeft">&#160;</td><td class="mdescRight">Merge Sort.  <a href="sorting_8hpp.html#a915fc71449b6505ddd0cb65057265977">More...</a><br /></td></tr>
-<tr class="separator:a915fc71449b6505ddd0cb65057265977"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a015779ec37ded61504f5d82616a15a74"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="conceptComparable.html">Comparable</a> T&gt; </td></tr>
-<tr class="memitem:a015779ec37ded61504f5d82616a15a74"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="sorting_8hpp.html#a015779ec37ded61504f5d82616a15a74">heapSort</a> (std::vector&lt; T &gt; &amp;v, std::function&lt; bool(T, T)&gt; compare=<a class="el" href="namespacesorting.html#a7ac0db6b02621f8df053149ab1a3d755">sorting::increasingOrder</a>&lt; T &gt;)</td></tr>
-<tr class="memdesc:a015779ec37ded61504f5d82616a15a74"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classHeap.html" title="Template Heap Data Structure.">Heap</a> Sort.  <a href="sorting_8hpp.html#a015779ec37ded61504f5d82616a15a74">More...</a><br /></td></tr>
-<tr class="separator:a015779ec37ded61504f5d82616a15a74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1646dc6191ca9bb828d932e47115bc4"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="conceptComparable.html">Comparable</a> T&gt; </td></tr>
+<tr class="memitem:ab1646dc6191ca9bb828d932e47115bc4"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="sorting_8hpp.html#ab1646dc6191ca9bb828d932e47115bc4">mergeSort</a> (std::vector&lt; T &gt; &amp;v, int compareFlag=<a class="el" href="namespacesorting.html#a7ac0db6b02621f8df053149ab1a3d755">sorting::increasingOrder</a>&lt; T &gt;)</td></tr>
+<tr class="memdesc:ab1646dc6191ca9bb828d932e47115bc4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Merge Sort.  <a href="sorting_8hpp.html#ab1646dc6191ca9bb828d932e47115bc4">More...</a><br /></td></tr>
+<tr class="separator:ab1646dc6191ca9bb828d932e47115bc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7da79482c5591a5f1b70b0fa1392449"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="conceptComparable.html">Comparable</a> T&gt; </td></tr>
+<tr class="memitem:ae7da79482c5591a5f1b70b0fa1392449"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="sorting_8hpp.html#ae7da79482c5591a5f1b70b0fa1392449">heapSort</a> (std::vector&lt; T &gt; &amp;v, int compareFlag=<a class="el" href="namespacesorting.html#aceffd480e59b42f487845a9d2b6767a6">sorting::HEAP_INCREASING</a>)</td></tr>
+<tr class="memdesc:ae7da79482c5591a5f1b70b0fa1392449"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classHeap.html" title="Template Heap Data Structure.">Heap</a> Sort.  <a href="sorting_8hpp.html#ae7da79482c5591a5f1b70b0fa1392449">More...</a><br /></td></tr>
+<tr class="separator:ae7da79482c5591a5f1b70b0fa1392449"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6f89630da43d212e293f8be9de864a00"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="conceptComparable.html">Comparable</a> T&gt; </td></tr>
 <tr class="memitem:a6f89630da43d212e293f8be9de864a00"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="sorting_8hpp.html#a6f89630da43d212e293f8be9de864a00">quickSort</a> (std::vector&lt; T &gt; &amp;v, std::function&lt; bool(T, T)&gt; compare=<a class="el" href="namespacesorting.html#a7ac0db6b02621f8df053149ab1a3d755">sorting::increasingOrder</a>&lt; T &gt;)</td></tr>
 <tr class="memdesc:a6f89630da43d212e293f8be9de864a00"><td class="mdescLeft">&#160;</td><td class="mdescRight">Quick Sort.  <a href="sorting_8hpp.html#a6f89630da43d212e293f8be9de864a00">More...</a><br /></td></tr>
@@ -147,15 +149,23 @@ Variables</h2></td></tr>
 <tr class="memitem:a9fc59e76491c20cd16cb18b2a6c1d476"><td class="memTemplItemLeft" align="right" valign="top">std::function&lt; bool(T, T)&gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacesorting.html#a9fc59e76491c20cd16cb18b2a6c1d476">sorting::lengthOrder</a></td></tr>
 <tr class="memdesc:a9fc59e76491c20cd16cb18b2a6c1d476"><td class="mdescLeft">&#160;</td><td class="mdescRight">Comparator for sorting in order of increasing length.  <a href="namespacesorting.html#a9fc59e76491c20cd16cb18b2a6c1d476">More...</a><br /></td></tr>
 <tr class="separator:a9fc59e76491c20cd16cb18b2a6c1d476"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aceffd480e59b42f487845a9d2b6767a6"><td class="memItemLeft" align="right" valign="top"><a id="aceffd480e59b42f487845a9d2b6767a6"></a>
+const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacesorting.html#aceffd480e59b42f487845a9d2b6767a6">sorting::HEAP_INCREASING</a> = <a class="el" href="namespaceheap.html#a455af8cc8e14d11406f10addfebd0eca">heap::MAX_HEAP</a></td></tr>
+<tr class="memdesc:aceffd480e59b42f487845a9d2b6767a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">heapSort compareFlag for sorting in Increasing Order <br /></td></tr>
+<tr class="separator:aceffd480e59b42f487845a9d2b6767a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a578a71d62cc3f443cd37865515db38ab"><td class="memItemLeft" align="right" valign="top"><a id="a578a71d62cc3f443cd37865515db38ab"></a>
+const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacesorting.html#a578a71d62cc3f443cd37865515db38ab">sorting::HEAP_DECREASING</a> = <a class="el" href="namespaceheap.html#aa80593a95da8ebd387e3fb147822716f">heap::MIN_HEAP</a></td></tr>
+<tr class="memdesc:a578a71d62cc3f443cd37865515db38ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">heapSort compareFlag for sorting in Decreasing Order <br /></td></tr>
+<tr class="separator:a578a71d62cc3f443cd37865515db38ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Sorting Algorithms. </p>
-<p >Popular Sorting Algorithms using metaprogramming and comparison callback support. </p><dl class="section author"><dt>Author</dt><dd>Atishek Kumar </dd></dl>
+<p >Popular Sorting Algorithms using metaprogramming with comparison callback support. </p><dl class="section author"><dt>Author</dt><dd>Atishek Kumar </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>May 2021 </dd></dl>
 <dl class="section warning"><dt>Warning</dt><dd>Not thread safe and minimal error handling. </dd></dl>
 </div><h2 class="groupheader">Function Documentation</h2>
-<a id="a015779ec37ded61504f5d82616a15a74"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a015779ec37ded61504f5d82616a15a74">&#9670;&nbsp;</a></span>heapSort()</h2>
+<a id="ae7da79482c5591a5f1b70b0fa1392449"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7da79482c5591a5f1b70b0fa1392449">&#9670;&nbsp;</a></span>heapSort()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -171,8 +181,8 @@ template&lt;<a class="el" href="conceptComparable.html">Comparable</a> T&gt; </d
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::function&lt; bool(T, T)&gt;&#160;</td>
-          <td class="paramname"><em>compare</em> = <code><a class="el" href="namespacesorting.html#a7ac0db6b02621f8df053149ab1a3d755">sorting::increasingOrder</a>&lt;&#160;T&#160;&gt;</code>&#160;</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>compareFlag</em> = <code><a class="el" href="namespacesorting.html#aceffd480e59b42f487845a9d2b6767a6">sorting::HEAP_INCREASING</a></code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -187,7 +197,7 @@ template&lt;<a class="el" href="conceptComparable.html">Comparable</a> T&gt; </d
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">v</td><td>reference of the vector to be sorted </td></tr>
-    <tr><td class="paramname">compare</td><td>comparison function </td></tr>
+    <tr><td class="paramname">compareFlag</td><td>comparison flag as defined in <a class="el" href="namespacesorting.html">sorting</a> </td></tr>
   </table>
   </dd>
 </dl>
@@ -248,8 +258,8 @@ template&lt;<a class="el" href="conceptComparable.html">Comparable</a> T&gt; </d
 
 </div>
 </div>
-<a id="a915fc71449b6505ddd0cb65057265977"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a915fc71449b6505ddd0cb65057265977">&#9670;&nbsp;</a></span>mergeSort()</h2>
+<a id="ab1646dc6191ca9bb828d932e47115bc4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1646dc6191ca9bb828d932e47115bc4">&#9670;&nbsp;</a></span>mergeSort()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -265,8 +275,8 @@ template&lt;<a class="el" href="conceptComparable.html">Comparable</a> T&gt; </d
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::function&lt; bool(T, T)&gt;&#160;</td>
-          <td class="paramname"><em>compare</em> = <code><a class="el" href="namespacesorting.html#a7ac0db6b02621f8df053149ab1a3d755">sorting::increasingOrder</a>&lt;&#160;T&#160;&gt;</code>&#160;</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>compareFlag</em> = <code><a class="el" href="namespacesorting.html#a7ac0db6b02621f8df053149ab1a3d755">sorting::increasingOrder</a>&lt;&#160;T&#160;&gt;</code>&#160;</td>
         </tr>
         <tr>
           <td></td>

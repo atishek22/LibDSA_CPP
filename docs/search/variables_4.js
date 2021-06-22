@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['lengthorder_186',['lengthOrder',['../namespacesorting.html#a9fc59e76491c20cd16cb18b2a6c1d476',1,'sorting']]]
+  ['max_5fheap_188',['MAX_HEAP',['../namespaceheap.html#a455af8cc8e14d11406f10addfebd0eca',1,'heap']]],
+  ['min_5fheap_189',['MIN_HEAP',['../namespaceheap.html#aa80593a95da8ebd387e3fb147822716f',1,'heap']]]
 ];

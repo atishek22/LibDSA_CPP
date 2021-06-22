@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['stack_99',['Stack',['../classStack.html',1,'']]]
+  ['stack_101',['Stack',['../classStack.html',1,'']]]
 ];

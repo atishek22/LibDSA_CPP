@@ -1,7 +1,7 @@
 /**
  * @file sorting.hpp
  * @brief Sorting Algorithms.
- * @details Popular Sorting Algorithms using metaprogramming and comparison callback support.
+ * @details Popular Sorting Algorithms using metaprogramming with comparison callback support.
  * @author Atishek Kumar
  * @date May 2021
  * @warning Not thread safe and minimal error handling.
@@ -59,6 +59,13 @@ namespace sorting {
             if (first.size() == second.size()) return first > second;
             else return first.size() > second.size();
         };
+
+    /** @brief heapSort compareFlag for sorting in Increasing Order
+     */
+    const int HEAP_INCREASING = heap::MAX_HEAP;
+    /** @brief heapSort compareFlag for sorting in Decreasing Order
+     */
+    const int HEAP_DECREASING = heap::MIN_HEAP;
 }
 
 
@@ -126,7 +133,7 @@ extern void insertionSort(std::vector<T> &v, std::function<bool(T, T)> compare =
  * @return none
  */
 template<Comparable T>
-extern void mergeSort(std::vector<T> &v, std::function<bool(T, T)> compare = sorting::increasingOrder<T>);
+extern void mergeSort(std::vector<T> &v, int compareFlag = sorting::increasingOrder<T>);
 
 
 /**
@@ -137,12 +144,12 @@ extern void mergeSort(std::vector<T> &v, std::function<bool(T, T)> compare = sor
 
  *
  * @param v reference of the vector to be sorted
- * @param compare comparison function
+ * @param compareFlag comparison flag as defined in @ref sorting
  * @tparam T data type of the \a std::vector elements
  * @return none
  */
 template<Comparable T>
-extern void heapSort(std::vector<T> &v, std::function<bool(T, T)> compare = sorting::increasingOrder<T>);
+extern void heapSort(std::vector<T> &v, int compareFlag = sorting::HEAP_INCREASING);
 
 
 /**

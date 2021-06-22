@@ -80,8 +80,8 @@ void mergeSort(std::vector<T> &v, std::function<bool(T, T)> compare) {
 
 
 template<Comparable T>
-void heapSort(std::vector<T> &v, std::function<bool(T, T)> compare) {
-    Heap<T> h(v, compare);
+void heapSort(std::vector<T> &v, int compareFlag) {
+    Heap<T> h(v, compareFlag);
     for(int i = v.size() - 1; i >= 0; i--) {
         v[i] = h.poll();
     }

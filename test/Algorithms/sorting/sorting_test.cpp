@@ -1,5 +1,5 @@
 #include "gtest/gtest.h"
-#include "../../../include/Algorithms.hpp"
+#include "../../../include/DSA.hpp"
 #define SIZE 10000
 
 /*
@@ -62,7 +62,7 @@ TEST_F(SortingTest, insertionSortDecreasingDouble) {
     }
 }
 
-/* ============================================ Merge Sort ===========================================================*/
+/* ============================================ Merge Sort =========================================================== */
 
 TEST_F(SortingTest, mergeSortIncreasingInteger) {
     mergeSort(IntegerVector, sorting::increasingOrder<int>);
@@ -90,7 +90,98 @@ TEST_F(SortingTest, mergeSortDecreasingDouble) {
     }
 }
 
+/* ============================================= Heap Sort ========================================================= */
+
+TEST_F(SortingTest, heapSortIncreasingInteger) {
+    heapSort(IntegerVector, sorting::HEAP_INCREASING);
+    for(int i = 0; i < SIZE - 1; i++) {
+        ASSERT_GE(IntegerVector[i+1], IntegerVector[i]);
+    }
+}
+
+TEST_F(SortingTest, heapSortDecreasingInteger) {
+    heapSort(IntegerVector, sorting::HEAP_DECREASING);
+    for(int i = 0; i < SIZE - 1; i++) {
+        ASSERT_LE(IntegerVector[i+1], IntegerVector[i]);
+    }
+}
+
+TEST_F(SortingTest, heapSortIncreasingDouble) {
+    heapSort(DoubleVector, sorting::HEAP_INCREASING);
+    for(int i = 0;i < SIZE - 1; i++) {
+        ASSERT_GE(DoubleVector[i+1], DoubleVector[i]);
+    }
+}
+
+TEST_F(SortingTest, heapSortDecreasingDouble) {
+    heapSort(DoubleVector, sorting::HEAP_DECREASING);
+    for(int i = 0; i < SIZE - 1; i++) {
+        ASSERT_LE(DoubleVector[i+1], DoubleVector[i]);
+    }
+}
+
+/* =========================================== Quick Sort ========================================================== */
+
+TEST_F(SortingTest, quickSortIncreasingInteger) {
+    quickSort(IntegerVector);
+    for(int i = 0; i < SIZE - 1; i++) {
+        ASSERT_GE(IntegerVector[i+1], IntegerVector[i]);
+    }
+}
+
+TEST_F(SortingTest, quickSortDecreasingInteger) {
+    quickSort(IntegerVector, sorting::decreasingOrder<int>);
+    for(int i = 0; i < SIZE - 1; i++) {
+        ASSERT_LE(IntegerVector[i+1], IntegerVector[i]);
+    }
+}
+
+TEST_F(SortingTest, quickSortIncreasingDouble) {
+    quickSort(DoubleVector, sorting::increasingOrder<double>);
+    for(int i = 0;i < SIZE - 1; i++) {
+        ASSERT_GE(DoubleVector[i+1], DoubleVector[i]);
+    }
+}
+
+TEST_F(SortingTest, quickSortDecreasingDouble) {
+    quickSort(DoubleVector, sorting::decreasingOrder<double>);
+    for(int i = 0; i < SIZE - 1; i++) {
+        ASSERT_LE(DoubleVector[i+1], DoubleVector[i]);
+    }
+}
+
+/* =========================================== Randomised Quick Sort ========================================================== */
+
+TEST_F(SortingTest, randomisedQuickSortIncreasingInteger) {
+    randomisedQuickSort(IntegerVector);
+    for(int i = 0; i < SIZE - 1; i++) {
+        ASSERT_GE(IntegerVector[i+1], IntegerVector[i]);
+    }
+}
+
+TEST_F(SortingTest, randomisedQuickSortDecreasingInteger) {
+    randomisedQuickSort(IntegerVector, sorting::decreasingOrder<int>);
+    for(int i = 0; i < SIZE - 1; i++) {
+        ASSERT_LE(IntegerVector[i+1], IntegerVector[i]);
+    }
+}
+
+TEST_F(SortingTest, randomisedQuickSortIncreasingDouble) {
+    randomisedQuickSort(DoubleVector, sorting::increasingOrder<double>);
+    for(int i = 0;i < SIZE - 1; i++) {
+        ASSERT_GE(DoubleVector[i+1], DoubleVector[i]);
+    }
+}
+
+TEST_F(SortingTest, randomisedQuickSortDecreasingDouble) {
+    randomisedQuickSort(DoubleVector, sorting::decreasingOrder<double>);
+    for(int i = 0; i < SIZE - 1; i++) {
+        ASSERT_LE(DoubleVector[i+1], DoubleVector[i]);
+    }
+}
+
 int main(int argc, char** argv) {
   ::testing::InitGoogleTest(&argc, argv);
   return RUN_ALL_TESTS();
 }
+

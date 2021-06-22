@@ -80,52 +80,53 @@ $(function() {
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifndef DATA_STRUCTURES_STACK_HPP</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#define DATA_STRUCTURES_STACK_HPP</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include&lt;bits/stdc++.h&gt;</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include&quot;../dynamic_array/dynamic_array.hpp&quot;</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="classStack.html">   19</a></span>&#160;<span class="keyword">class </span><a class="code" href="classStack.html">Stack</a> {</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <a class="code" href="classDynamicArray.html">DynamicArray&lt;T&gt;</a>* stack;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keywordtype">long</span> <span class="keywordtype">long</span> _top;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <a class="code" href="classStack.html#aefee698059467258bbd79045aca62a63">Stack</a>();</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <a class="code" href="classStack.html#aefee698059467258bbd79045aca62a63">Stack</a>(std::initializer_list&lt;T&gt; _list);</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <a class="code" href="classStack.html#a9e7a00875aefbdac560ab189b7bc61d1">~Stack</a>();</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classStack.html#a2d11b97a239f5ea85a6ca61fe6c1376b">push</a>(T element);</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classStack.html#a2cbafb4f2dcc4a8a27d661004e937f80">pop</a>();</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    T <a class="code" href="classStack.html#ad461f6de40c8672dbf743068f4515061">top</a>();</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
-<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="classStack.html#a86ad030da27d2b9c44df4954aa48bac2">   68</a></span>&#160;    <span class="keywordtype">size_t</span> <a class="code" href="classStack.html#a86ad030da27d2b9c44df4954aa48bac2">size</a>() noexcept {</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <span class="keywordflow">return</span> stack-&gt;<a class="code" href="classDynamicArray.html#aaffe737edf8ce3e649726d8b44418ba8">size</a>();</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    }</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classStack.html#a3dd6e933751afd4aaf80db998b3099e4">isEmpty</a>() noexcept;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
-<div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="classStack.html#a0992f5d5b74abd9c717e108ecd6dbb9c">   81</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classStack.html#a0992f5d5b74abd9c717e108ecd6dbb9c">clear</a>() {</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        <span class="keywordflow">try</span> {</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;            stack-&gt;<a class="code" href="classDynamicArray.html#a1265e263c91cd15797cf8187ef45350e">clear</a>();</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        } <span class="keywordflow">catch</span>(<span class="keyword">const</span> std::bad_alloc &amp;e) {</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;            <span class="keywordflow">throw</span> std::runtime_error(<span class="stringliteral">&quot;Unable to clear the Stack&quot;</span>);</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        }</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    }</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;};</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="preprocessor">#endif </span><span class="comment">//DATA_STRUCTURES_STACK_HPP</span></div>
-<div class="ttc" id="aclassDynamicArray_html"><div class="ttname"><a href="classDynamicArray.html">DynamicArray</a></div><div class="ttdoc">DynamicArray (Vector) class.</div><div class="ttdef"><b>Definition:</b> dynamic_array.hpp:22</div></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include&lt;stdexcept&gt;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include&quot;../dynamic_array/dynamic_array.hpp&quot;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="classStack.html">   20</a></span>&#160;<span class="keyword">class </span><a class="code" href="classStack.html">Stack</a> {</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <a class="code" href="classDynamicArray.html">DynamicArray&lt;T&gt;</a>* stack;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordtype">long</span> <span class="keywordtype">long</span> _top;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <a class="code" href="classStack.html#aefee698059467258bbd79045aca62a63">Stack</a>();</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <a class="code" href="classStack.html#aefee698059467258bbd79045aca62a63">Stack</a>(std::initializer_list&lt;T&gt; _list);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <a class="code" href="classStack.html#a9e7a00875aefbdac560ab189b7bc61d1">~Stack</a>();</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classStack.html#a2d11b97a239f5ea85a6ca61fe6c1376b">push</a>(T element);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classStack.html#a2cbafb4f2dcc4a8a27d661004e937f80">pop</a>();</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    T <a class="code" href="classStack.html#ad461f6de40c8672dbf743068f4515061">top</a>();</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
+<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="classStack.html#a86ad030da27d2b9c44df4954aa48bac2">   69</a></span>&#160;    <span class="keywordtype">size_t</span> <a class="code" href="classStack.html#a86ad030da27d2b9c44df4954aa48bac2">size</a>() noexcept {</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        <span class="keywordflow">return</span> stack-&gt;<a class="code" href="classDynamicArray.html#aaffe737edf8ce3e649726d8b44418ba8">size</a>();</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    }</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classStack.html#a3dd6e933751afd4aaf80db998b3099e4">isEmpty</a>() noexcept;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
+<div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="classStack.html#a0992f5d5b74abd9c717e108ecd6dbb9c">   82</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classStack.html#a0992f5d5b74abd9c717e108ecd6dbb9c">clear</a>() {</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        <span class="keywordflow">try</span> {</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;            stack-&gt;<a class="code" href="classDynamicArray.html#a1265e263c91cd15797cf8187ef45350e">clear</a>();</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        } <span class="keywordflow">catch</span>(<span class="keyword">const</span> std::bad_alloc &amp;e) {</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;            <span class="keywordflow">throw</span> std::runtime_error(<span class="stringliteral">&quot;Unable to clear the Stack&quot;</span>);</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        }</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    }</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;};</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="preprocessor">#endif </span><span class="comment">//DATA_STRUCTURES_STACK_HPP</span></div>
+<div class="ttc" id="aclassDynamicArray_html"><div class="ttname"><a href="classDynamicArray.html">DynamicArray</a></div><div class="ttdoc">DynamicArray (Vector) class.</div><div class="ttdef"><b>Definition:</b> dynamic_array.hpp:25</div></div>
 <div class="ttc" id="aclassDynamicArray_html_a1265e263c91cd15797cf8187ef45350e"><div class="ttname"><a href="classDynamicArray.html#a1265e263c91cd15797cf8187ef45350e">DynamicArray::clear</a></div><div class="ttdeci">void clear()</div><div class="ttdoc">Clear the array.</div><div class="ttdef"><b>Definition:</b> dynamic_array.cpp:93</div></div>
 <div class="ttc" id="aclassDynamicArray_html_aaffe737edf8ce3e649726d8b44418ba8"><div class="ttname"><a href="classDynamicArray.html#aaffe737edf8ce3e649726d8b44418ba8">DynamicArray::size</a></div><div class="ttdeci">size_t size() noexcept</div><div class="ttdoc">Size of the array.</div><div class="ttdef"><b>Definition:</b> dynamic_array.cpp:73</div></div>
-<div class="ttc" id="aclassStack_html"><div class="ttname"><a href="classStack.html">Stack</a></div><div class="ttdoc">Stack Data Structure Implementation.</div><div class="ttdef"><b>Definition:</b> stack.hpp:19</div></div>
-<div class="ttc" id="aclassStack_html_a0992f5d5b74abd9c717e108ecd6dbb9c"><div class="ttname"><a href="classStack.html#a0992f5d5b74abd9c717e108ecd6dbb9c">Stack::clear</a></div><div class="ttdeci">void clear()</div><div class="ttdoc">Clear the stack.</div><div class="ttdef"><b>Definition:</b> stack.hpp:81</div></div>
+<div class="ttc" id="aclassStack_html"><div class="ttname"><a href="classStack.html">Stack</a></div><div class="ttdoc">Stack Data Structure Implementation.</div><div class="ttdef"><b>Definition:</b> stack.hpp:20</div></div>
+<div class="ttc" id="aclassStack_html_a0992f5d5b74abd9c717e108ecd6dbb9c"><div class="ttname"><a href="classStack.html#a0992f5d5b74abd9c717e108ecd6dbb9c">Stack::clear</a></div><div class="ttdeci">void clear()</div><div class="ttdoc">Clear the stack.</div><div class="ttdef"><b>Definition:</b> stack.hpp:82</div></div>
 <div class="ttc" id="aclassStack_html_a2cbafb4f2dcc4a8a27d661004e937f80"><div class="ttname"><a href="classStack.html#a2cbafb4f2dcc4a8a27d661004e937f80">Stack::pop</a></div><div class="ttdeci">bool pop()</div><div class="ttdoc">Pop the top element.</div><div class="ttdef"><b>Definition:</b> stack.cpp:32</div></div>
 <div class="ttc" id="aclassStack_html_a2d11b97a239f5ea85a6ca61fe6c1376b"><div class="ttname"><a href="classStack.html#a2d11b97a239f5ea85a6ca61fe6c1376b">Stack::push</a></div><div class="ttdeci">void push(T element)</div><div class="ttdoc">Push an element.</div><div class="ttdef"><b>Definition:</b> stack.cpp:21</div></div>
 <div class="ttc" id="aclassStack_html_a3dd6e933751afd4aaf80db998b3099e4"><div class="ttname"><a href="classStack.html#a3dd6e933751afd4aaf80db998b3099e4">Stack::isEmpty</a></div><div class="ttdeci">bool isEmpty() noexcept</div><div class="ttdoc">Check for empty stack.</div><div class="ttdef"><b>Definition:</b> stack.cpp:53</div></div>
-<div class="ttc" id="aclassStack_html_a86ad030da27d2b9c44df4954aa48bac2"><div class="ttname"><a href="classStack.html#a86ad030da27d2b9c44df4954aa48bac2">Stack::size</a></div><div class="ttdeci">size_t size() noexcept</div><div class="ttdoc">Size of the stack - Number of elements.</div><div class="ttdef"><b>Definition:</b> stack.hpp:68</div></div>
+<div class="ttc" id="aclassStack_html_a86ad030da27d2b9c44df4954aa48bac2"><div class="ttname"><a href="classStack.html#a86ad030da27d2b9c44df4954aa48bac2">Stack::size</a></div><div class="ttdeci">size_t size() noexcept</div><div class="ttdoc">Size of the stack - Number of elements.</div><div class="ttdef"><b>Definition:</b> stack.hpp:69</div></div>
 <div class="ttc" id="aclassStack_html_a9e7a00875aefbdac560ab189b7bc61d1"><div class="ttname"><a href="classStack.html#a9e7a00875aefbdac560ab189b7bc61d1">Stack::~Stack</a></div><div class="ttdeci">~Stack()</div><div class="ttdoc">Destructor.</div><div class="ttdef"><b>Definition:</b> stack.cpp:16</div></div>
 <div class="ttc" id="aclassStack_html_ad461f6de40c8672dbf743068f4515061"><div class="ttname"><a href="classStack.html#ad461f6de40c8672dbf743068f4515061">Stack::top</a></div><div class="ttdeci">T top()</div><div class="ttdoc">Get the top element.</div><div class="ttdef"><b>Definition:</b> stack.cpp:43</div></div>
 <div class="ttc" id="aclassStack_html_aefee698059467258bbd79045aca62a63"><div class="ttname"><a href="classStack.html#aefee698059467258bbd79045aca62a63">Stack::Stack</a></div><div class="ttdeci">Stack()</div><div class="ttdoc">Default constructor.</div><div class="ttdef"><b>Definition:</b> stack.cpp:4</div></div>
