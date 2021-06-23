@@ -20,4 +20,7 @@
 #include"../src/Data_structures/linked_list/linked_list.hpp"
 #include"../src/Data_structures/linked_list/linked_list.cpp"
 
+#include"../src/Data_structures/hash_tables/hash_table.hpp"
+#include"../src/Data_structures/hash_tables/hash_table.cpp"
+
 //#endif //DATA_STRUCTURES_DS_HPP

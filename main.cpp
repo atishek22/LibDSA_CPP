@@ -7,17 +7,15 @@
  */
 
 int main() {
-    srand(0);
-    LinkedList<int> s;
+    HashTable<int, int> a;
     for(int i = 0; i < 10; i++) {
-        s.add_last(i);
-        s.add_first(i);
+        a.insert(i, 2*i);
     }
-    s.clear();
-    s.add_first(10);
-    while(!s.empty()) {
-        std::cout << s.remove_first() <<" ";
+    a.update(5, 15);
+    for(int i = 0; i < 10; i++) {
+        std::cout << a.get(i).value() << "\n";
     }
-    std::cout << "\n";
+    a.clear();
+    std::cout << a.size() << " " << a.empty() << "\n";
     return 0;
 }

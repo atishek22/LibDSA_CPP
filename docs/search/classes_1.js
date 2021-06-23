@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['heap_97',['Heap',['../classHeap.html',1,'']]]
+  ['hashtable_103',['HashTable',['../classHashTable.html',1,'']]],
+  ['heap_104',['Heap',['../classHeap.html',1,'']]]
 ];

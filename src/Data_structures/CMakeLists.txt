@@ -7,4 +7,5 @@ add_library(
   ./stack/stack.cpp
   ./queue/queue.cpp
   ./linked_list/linked_list.cpp
+  ./hash_tables/hash_table.cpp
   )
