@@ -7,7 +7,8 @@ var indexSectionsWithContent =
   4: "abcdefghilmnopqrstu~",
   5: "dhilm",
   6: "lpr",
-  7: "achs"
+  7: "l",
+  8: "achs"
 };
 
 var indexSectionNames =
@@ -19,7 +20,8 @@ var indexSectionNames =
   4: "functions",
   5: "variables",
   6: "defines",
-  7: "concepts"
+  7: "pages",
+  8: "concepts"
 };
 
 var indexSectionLabels =
@@ -31,6 +33,7 @@ var indexSectionLabels =
   4: "Functions",
   5: "Variables",
   6: "Macros",
-  7: "Concepts"
+  7: "Pages",
+  8: "Concepts"
 };
 
