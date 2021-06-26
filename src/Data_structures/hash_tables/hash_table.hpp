@@ -1,10 +1,12 @@
 /**
  * @file hash_table.hpp
+ * @brief Generic Hash Table with chaining implementation
+ * @details HashTable template class implementing generic Hash Table using \a std::hash for calculating the table index
+ * from the key,
+ * @author atishek22 <kumaratishek22@gmail.com>
+ * @date Jun 2021
+ * @warning Not thread safe
  */
-
-//TODO: Iterator Implementation
-//TODO: Keys, Values and Key-Value lists
-
 
 #ifndef DATA_STRUCTURES_HASH_TABLE_HPP
 #define DATA_STRUCTURES_HASH_TABLE_HPP
@@ -16,22 +18,18 @@
 #include<concepts>
 #include<limits>
 #include<optional>
+#include<vector>
 
 #include"../linked_list/linked_list.hpp"
-
-/** @brief Hashable Concept
- *  @details Constraint for the Key type in the hash table to types that have a \a std::hash implementation
- */
-template<typename T>
-concept Hashable = requires(T a) {
-    {std::hash<T>{}(a)} -> std::convertible_to<size_t>;
-};
+#include "../../Utils/hashable.hpp"
 
 /**@brief HashTable Template Class 
  * @details Hash table implementation using separate chaining as the method for hashing conflict resolution
  *
  * @tparam Key Hashable Key data type
  * @tparam Data Type of data to be stored by the table
+ *
+ * @warning Not thread safe
  */
 template<Hashable Key, typename Data>
 class HashTable {
@@ -153,6 +151,41 @@ public:
      * @return \b Boolean \b true if the value is updated successfully
      */
     bool update(Key key, Data new_data);
+
+
+    /** @brief Iterator for the hash table
+     *
+     * @todo Iterator implementation
+     */
+    struct Iterator {
+        //TODO: Iterator Implementation
+    };
+
+    //TODO: Keys, Values and Key-Value lists
+    /**
+     * @brief Key-Value pairs from the table
+     * @details 
+     *
+     * @warning Function not yet implemented
+     * @todo Implement function
+     */
+    std::vector<std::pair<Key, Data>> key_value();
+
+    /**
+     * @brief Keys from the table
+     *
+     * @warning Function not yet implemented
+     * @todo Implement function
+     */
+    std::vector<Key> keys();
+
+    /**
+     * @brief Values from the table
+     *
+     * @warning Function not yet implemented
+     * @todo Implement function
+     */
+    std::vector<Data> values();
 };
 
 #endif //DATA_STRUCTURES_HASH_TABLE_HPP

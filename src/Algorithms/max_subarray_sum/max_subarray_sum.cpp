@@ -5,7 +5,7 @@
  * The problem is divided to find two array of the form A[i..mid] and A[mid+1..j]
  * Returns a tuple consisting of the indices demarcating the subarray and the sum of the subarray
  */
-template<arithmetic T>
+template<Arithmetic T>
 static std::tuple<int, int, T> max_crossing_subarray(std::vector<T> v, int low, int mid, int high) {
     T left_sum = std::numeric_limits<T>::min();
     T sum = (T) 0;
@@ -36,7 +36,7 @@ static std::tuple<int, int, T> max_crossing_subarray(std::vector<T> v, int low, 
  *  -> A[i..mid]+A[mid+1..j]
  *  -> A[i..j]; i,j > mid
  */
-template<arithmetic T>
+template<Arithmetic T>
 static std::tuple<int, int, T> max_subarray_sum_recur(std::vector<T> v, int low, int high) {
     int left_low, left_high;
     int right_low, right_high;
@@ -62,7 +62,7 @@ static std::tuple<int, int, T> max_subarray_sum_recur(std::vector<T> v, int low,
  * Returns the tuple consisting of the indices demarcating
  * the subarray and the maximum sum
  */
-template<arithmetic T>
+template<Arithmetic T>
 std::tuple<int, int, T> max_subarray_sum(std::vector<T> v) {
     return max_subarray_sum_recur(v, 0, v.size() - 1);
 }
@@ -71,7 +71,7 @@ std::tuple<int, int, T> max_subarray_sum(std::vector<T> v) {
  * Faster implementation for the max_subarray_sum
  * returns just the maximum sum without the sub-array indices
  */
-template <arithmetic T>
+template <Arithmetic T>
 T max_subarray_sum_fast(std::vector<T> v) {
   T max = std::numeric_limits<T>::min();
   T sum = (T)0;

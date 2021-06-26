@@ -16,13 +16,7 @@
 #include<tuple>
 #include<algorithm>
 
-/** @brief Arithmetic concept
- * @details Template specialisation for arithmetic (numerical) types. 
- * 
- * Extension of \a std::integral and \a std::floating_point
- */
-template<typename T>
-concept arithmetic = std::integral<T> || std::floating_point<T>;
+#include"../../Utils/arithmetic.hpp"
 
 /**
  * @brief Maximum Subarray Sum
@@ -36,7 +30,7 @@ concept arithmetic = std::integral<T> || std::floating_point<T>;
  * @tparam T Numerical data type of the \a std::vector elements
  * @return tuple consisting of the starting, ending subarray indices and the maximum sum
  */
-template <arithmetic T>
+template <Arithmetic T>
 extern std::tuple<int, int, T> max_subarray_sum(std::vector<T> v);
 
 /**
@@ -51,7 +45,7 @@ extern std::tuple<int, int, T> max_subarray_sum(std::vector<T> v);
  * @tparam T data type of the \a std::vector elements
  * @return maximum sum value
  */
-template <arithmetic T>
+template <Arithmetic T>
 extern T max_subarray_sum_fast(std::vector<T> v);
 
 #endif //ALGORITHMS_MAX_SUBARRAY_SUM_HPP

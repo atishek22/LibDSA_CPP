@@ -102,17 +102,15 @@ $(document).ready(function(){initNavTree('max__subarray__sum_8hpp_source.html','
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include&lt;tuple&gt;</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include&lt;algorithm&gt;</span></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="conceptarithmetic.html">   25</a></span>&#160;<span class="keyword">concept </span><a class="code" href="conceptarithmetic.html">arithmetic</a> = std::integral&lt;T&gt; || std::floating_point&lt;T&gt;;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">template</span> &lt;arithmetic T&gt;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">extern</span> std::tuple&lt;int, int, T&gt; <a class="code" href="max__subarray__sum_8hpp.html#a3950e054f87049f6e387f74a50a633d2">max_subarray_sum</a>(std::vector&lt;T&gt; v);</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keyword">template</span> &lt;arithmetic T&gt;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keyword">extern</span> T <a class="code" href="max__subarray__sum_8hpp.html#a68337c64f3d93d19002563607d3fc597">max_subarray_sum_fast</a>(std::vector&lt;T&gt; v);</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor">#endif </span><span class="comment">//ALGORITHMS_MAX_SUBARRAY_SUM_HPP</span></div>
-<div class="ttc" id="aconceptarithmetic_html"><div class="ttname"><a href="conceptarithmetic.html">arithmetic</a></div><div class="ttdoc">Arithmetic concept.</div><div class="ttdef"><b>Definition:</b> max_subarray_sum.hpp:25</div></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include&quot;../../Utils/arithmetic.hpp&quot;</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">template</span> &lt;Arithmetic T&gt;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">extern</span> std::tuple&lt;int, int, T&gt; <a class="code" href="max__subarray__sum_8hpp.html#a3950e054f87049f6e387f74a50a633d2">max_subarray_sum</a>(std::vector&lt;T&gt; v);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">template</span> &lt;Arithmetic T&gt;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keyword">extern</span> T <a class="code" href="max__subarray__sum_8hpp.html#a68337c64f3d93d19002563607d3fc597">max_subarray_sum_fast</a>(std::vector&lt;T&gt; v);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">#endif </span><span class="comment">//ALGORITHMS_MAX_SUBARRAY_SUM_HPP</span></div>
 <div class="ttc" id="amax__subarray__sum_8hpp_html_a3950e054f87049f6e387f74a50a633d2"><div class="ttname"><a href="max__subarray__sum_8hpp.html#a3950e054f87049f6e387f74a50a633d2">max_subarray_sum</a></div><div class="ttdeci">std::tuple&lt; int, int, T &gt; max_subarray_sum(std::vector&lt; T &gt; v)</div><div class="ttdoc">Maximum Subarray Sum.</div><div class="ttdef"><b>Definition:</b> max_subarray_sum.cpp:66</div></div>
 <div class="ttc" id="amax__subarray__sum_8hpp_html_a68337c64f3d93d19002563607d3fc597"><div class="ttname"><a href="max__subarray__sum_8hpp.html#a68337c64f3d93d19002563607d3fc597">max_subarray_sum_fast</a></div><div class="ttdeci">T max_subarray_sum_fast(std::vector&lt; T &gt; v)</div><div class="ttdoc">Maximum Subarray Sum Fast.</div><div class="ttdef"><b>Definition:</b> max_subarray_sum.cpp:75</div></div>
 </div><!-- fragment --></div><!-- contents -->

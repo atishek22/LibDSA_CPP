@@ -3,8 +3,8 @@
  * @author Atishek Kumar
  * @date May 2021
  */
-#ifndef DSA_COMPARABLE_HPP
-#define DSA_COMPARABLE_HPP
+#ifndef DSA_CONCEPT_COMPARABLE_HPP
+#define DSA_CONCEPT_COMPARABLE_HPP
 
 #include<concepts>
 
@@ -22,4 +22,4 @@ concept Comparable = requires(T a, T b) {
     {a <= b} -> std::convertible_to<bool>;
 };
 
-#endif //DSA_COMPARABLE_HPP
+#endif //DSA_CONCEPT_COMPARABLE_HPP

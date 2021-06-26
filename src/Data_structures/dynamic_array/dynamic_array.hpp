@@ -2,7 +2,7 @@
  * @file dynamic_array.hpp
  * @brief Dynamic Arrays (DynamicArray)
  * @details DynamicArray template class implementing the Dynamic array (Vector) data structure using \a C static arrays
- * @author Atishek Kumar
+ * @author atishek22 <kumaratishek22@gmail.com>
  * @date May 2021
  * @warning Not thread safe
  */

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['arithmetic_207',['arithmetic',['../conceptarithmetic.html',1,'']]]
+  ['arithmetic_224',['Arithmetic',['../conceptArithmetic.html',1,'']]]
 ];

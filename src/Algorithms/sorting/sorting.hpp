@@ -15,6 +15,7 @@
 #include<random>
 
 #include"../../Utils/comparable.hpp"
+#include"../../Utils/container.hpp"
 #include"../../Data_structures/heap/heap.hpp"
 
 /** @namespace sorting
@@ -27,14 +28,6 @@
  *  @return boolean value
  */
 namespace sorting {
-    /** @brief Container concept
-     * @details Concept for defining comparison functions for sorting containers. 
-     * See @ref sorting::lengthOrder<>()
-     */
-    template<typename T>
-        concept container = Comparable<T> && requires(T a) {
-            { a.size() } -> std::same_as<typename T::size_type>;
-        };
 
     /** @brief Comparator for sorting in increasing order
      */
@@ -54,7 +47,7 @@ namespace sorting {
      *
      * Only valid for strings and other containers that have well defined sizes
      */
-    template<container T>
+    template<OrderedContainer T>
         std::function<bool(T, T)> lengthOrder = [](const T &first, const T &second) {
             if (first.size() == second.size()) return first > second;
             else return first.size() > second.size();

@@ -1,6 +1,5 @@
 var sorting_8hpp =
 [
-    [ "sorting::container", "conceptsorting_1_1container.html", null ],
     [ "heapSort", "sorting_8hpp.html#ae7da79482c5591a5f1b70b0fa1392449", null ],
     [ "insertionSort", "sorting_8hpp.html#a11890b83f326e3a52513e4fe16686124", null ],
     [ "mergeSort", "sorting_8hpp.html#ab1646dc6191ca9bb828d932e47115bc4", null ],

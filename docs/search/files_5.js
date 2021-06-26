@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['order_5fstatistics_2ehpp_120',['order_statistics.hpp',['../order__statistics_8hpp.html',1,'']]]
+  ['max_5fsubarray_5fsum_2ehpp_132',['max_subarray_sum.hpp',['../max__subarray__sum_8hpp.html',1,'']]]
 ];

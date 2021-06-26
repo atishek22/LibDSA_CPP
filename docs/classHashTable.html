@@ -103,6 +103,12 @@ $(document).ready(function(){initNavTree('classHashTable.html',''); initResizabl
 
 <p><code>#include &lt;<a class="el" href="hash__table_8hpp_source.html">hash_table.hpp</a>&gt;</code></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structHashTable_1_1Iterator.html">Iterator</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="structHashTable_1_1Iterator.html" title="Iterator for the hash table.">Iterator</a> for the hash table.  <a href="structHashTable_1_1Iterator.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:abc20ca427d41afa6ce33b3fe011dde91"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHashTable.html#abc20ca427d41afa6ce33b3fe011dde91">HashTable</a> (size_t capacity=DEFAULT_CAPACITY, float loadFactor=DEFAULT_LOAD_FACTOR)</td></tr>
@@ -138,6 +144,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a2f72933f4708d9c194687aeafd33ce58"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHashTable.html#a2f72933f4708d9c194687aeafd33ce58">update</a> (Key key, Data new_data)</td></tr>
 <tr class="memdesc:a2f72933f4708d9c194687aeafd33ce58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update an element value.  <a href="classHashTable.html#a2f72933f4708d9c194687aeafd33ce58">More...</a><br /></td></tr>
 <tr class="separator:a2f72933f4708d9c194687aeafd33ce58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86703dffb3f55d0b13edbe43165c343a"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::pair&lt; Key, Data &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHashTable.html#a86703dffb3f55d0b13edbe43165c343a">key_value</a> ()</td></tr>
+<tr class="memdesc:a86703dffb3f55d0b13edbe43165c343a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Key-Value pairs from the table.  <a href="classHashTable.html#a86703dffb3f55d0b13edbe43165c343a">More...</a><br /></td></tr>
+<tr class="separator:a86703dffb3f55d0b13edbe43165c343a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e72ce6d827b51143b05e85f5495279c"><td class="memItemLeft" align="right" valign="top">std::vector&lt; Key &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHashTable.html#a1e72ce6d827b51143b05e85f5495279c">keys</a> ()</td></tr>
+<tr class="memdesc:a1e72ce6d827b51143b05e85f5495279c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Keys from the table.  <a href="classHashTable.html#a1e72ce6d827b51143b05e85f5495279c">More...</a><br /></td></tr>
+<tr class="separator:a1e72ce6d827b51143b05e85f5495279c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada84df16d8d7336f1bfdaf1418cbca8d"><td class="memItemLeft" align="right" valign="top">std::vector&lt; Data &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHashTable.html#ada84df16d8d7336f1bfdaf1418cbca8d">values</a> ()</td></tr>
+<tr class="memdesc:ada84df16d8d7336f1bfdaf1418cbca8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Values from the table.  <a href="classHashTable.html#ada84df16d8d7336f1bfdaf1418cbca8d">More...</a><br /></td></tr>
+<tr class="separator:ada84df16d8d7336f1bfdaf1418cbca8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;<a class="el" href="conceptHashable.html">Hashable</a> Key, typename Data&gt;<br />
@@ -146,10 +161,11 @@ class HashTable&lt; Key, Data &gt;</div><p ><a class="el" href="classHashTable.h
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">Key</td><td>Hashable Key data type </td></tr>
-    <tr><td class="paramname">Data</td><td>Type of data to be stored by the table </td></tr>
+    <tr><td class="paramname">Data</td><td>Type of data to be stored by the table</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section warning"><dt>Warning</dt><dd>Not thread safe </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="abc20ca427d41afa6ce33b3fe011dde91"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abc20ca427d41afa6ce33b3fe011dde91">&#9670;&nbsp;</a></span>HashTable()</h2>
@@ -423,6 +439,52 @@ template&lt;<a class="el" href="conceptHashable.html">Hashable</a> Key, typename
 
 </div>
 </div>
+<a id="a86703dffb3f55d0b13edbe43165c343a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86703dffb3f55d0b13edbe43165c343a">&#9670;&nbsp;</a></span>key_value()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="conceptHashable.html">Hashable</a> Key, typename Data &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;std::pair&lt;Key, Data&gt; &gt; <a class="el" href="classHashTable.html">HashTable</a>&lt; Key, Data &gt;::key_value </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Key-Value pairs from the table. </p>
+<dl class="section warning"><dt>Warning</dt><dd>Function not yet implemented </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000002">Todo:</a></b></dt><dd>Implement function </dd></dl>
+
+</div>
+</div>
+<a id="a1e72ce6d827b51143b05e85f5495279c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e72ce6d827b51143b05e85f5495279c">&#9670;&nbsp;</a></span>keys()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="conceptHashable.html">Hashable</a> Key, typename Data &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;Key&gt; <a class="el" href="classHashTable.html">HashTable</a>&lt; Key, Data &gt;::keys </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Keys from the table. </p>
+<dl class="section warning"><dt>Warning</dt><dd>Function not yet implemented </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000003">Todo:</a></b></dt><dd>Implement function </dd></dl>
+
+</div>
+</div>
 <a id="a42dabb605d8d9eb7f3f1d41a828c6dda"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a42dabb605d8d9eb7f3f1d41a828c6dda">&#9670;&nbsp;</a></span>remove()</h2>
 
@@ -526,6 +588,29 @@ template&lt;<a class="el" href="conceptHashable.html">Hashable</a> Key, typename
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><b>Boolean</b> <b>true</b> if the value is updated successfully </dd></dl>
+
+</div>
+</div>
+<a id="ada84df16d8d7336f1bfdaf1418cbca8d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada84df16d8d7336f1bfdaf1418cbca8d">&#9670;&nbsp;</a></span>values()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="conceptHashable.html">Hashable</a> Key, typename Data &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;Data&gt; <a class="el" href="classHashTable.html">HashTable</a>&lt; Key, Data &gt;::values </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Values from the table. </p>
+<dl class="section warning"><dt>Warning</dt><dd>Function not yet implemented </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000004">Todo:</a></b></dt><dd>Implement function </dd></dl>
 
 </div>
 </div>

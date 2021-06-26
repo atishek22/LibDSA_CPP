@@ -92,7 +92,6 @@ $(document).ready(function(){initNavTree('sorting_8hpp.html',''); initResizable(
 <div class="header">
   <div class="summary">
 <a href="#namespaces">Namespaces</a> &#124;
-<a href="#concepts">Concepts</a> &#124;
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">sorting.hpp File Reference</div></div>
@@ -105,6 +104,7 @@ $(document).ready(function(){initNavTree('sorting_8hpp.html',''); initResizable(
 <code>#include &lt;functional&gt;</code><br />
 <code>#include &lt;random&gt;</code><br />
 <code>#include &quot;<a class="el" href="comparable_8hpp_source.html">../../Utils/comparable.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="container_8hpp_source.html">../../Utils/container.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="heap_8hpp_source.html">../../Data_structures/heap/heap.hpp</a>&quot;</code><br />
 </div>
 <p><a href="sorting_8hpp_source.html">Go to the source code of this file.</a></p>
@@ -113,12 +113,6 @@ $(document).ready(function(){initNavTree('sorting_8hpp.html',''); initResizable(
 Namespaces</h2></td></tr>
 <tr class="memitem:namespacesorting"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacesorting.html">sorting</a></td></tr>
 <tr class="memdesc:namespacesorting"><td class="mdescLeft">&#160;</td><td class="mdescRight">Predefined Standard Comparison Functions. <br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="concepts"></a>
-Concepts</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">concept &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="conceptsorting_1_1container.html">sorting::container</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Container concept. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
@@ -162,7 +156,7 @@ Variables</h2></td></tr>
 <tr class="memitem:a4ef6c3a485f05a85ba7e2e6b5a9a5409"><td class="memTemplItemLeft" align="right" valign="top">std::function&lt; bool(T, T)&gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacesorting.html#a4ef6c3a485f05a85ba7e2e6b5a9a5409">sorting::decreasingOrder</a></td></tr>
 <tr class="memdesc:a4ef6c3a485f05a85ba7e2e6b5a9a5409"><td class="mdescLeft">&#160;</td><td class="mdescRight">Comparator for sorting in decreasing order.  <a href="namespacesorting.html#a4ef6c3a485f05a85ba7e2e6b5a9a5409">More...</a><br /></td></tr>
 <tr class="separator:a4ef6c3a485f05a85ba7e2e6b5a9a5409"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9fc59e76491c20cd16cb18b2a6c1d476"><td class="memTemplParams" colspan="2">template&lt;container T&gt; </td></tr>
+<tr class="memitem:a9fc59e76491c20cd16cb18b2a6c1d476"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="conceptOrderedContainer.html">OrderedContainer</a> T&gt; </td></tr>
 <tr class="memitem:a9fc59e76491c20cd16cb18b2a6c1d476"><td class="memTemplItemLeft" align="right" valign="top">std::function&lt; bool(T, T)&gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacesorting.html#a9fc59e76491c20cd16cb18b2a6c1d476">sorting::lengthOrder</a></td></tr>
 <tr class="memdesc:a9fc59e76491c20cd16cb18b2a6c1d476"><td class="mdescLeft">&#160;</td><td class="mdescRight">Comparator for sorting in order of increasing length.  <a href="namespacesorting.html#a9fc59e76491c20cd16cb18b2a6c1d476">More...</a><br /></td></tr>
 <tr class="separator:a9fc59e76491c20cd16cb18b2a6c1d476"><td class="memSeparator" colspan="2">&#160;</td></tr>
