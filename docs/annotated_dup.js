@@ -1,5 +1,6 @@
 var annotated_dup =
 [
+    [ "BST", "classBST.html", null ],
     [ "DynamicArray", "classDynamicArray.html", "classDynamicArray" ],
     [ "HashTable", "classHashTable.html", "classHashTable" ],
     [ "HashTableOA", "classHashTableOA.html", "classHashTableOA" ],

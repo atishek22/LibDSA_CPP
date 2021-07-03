@@ -1,5 +1,6 @@
 var dir_e30a865854b4193bc22fa1f645984c3b =
 [
+    [ "binary_trees", "dir_5797402107ae29f3adfb9c79e04341be.html", "dir_5797402107ae29f3adfb9c79e04341be" ],
     [ "dynamic_array", "dir_8e8108a7759566ff6b26c7b3164d9303.html", "dir_8e8108a7759566ff6b26c7b3164d9303" ],
     [ "hash_tables", "dir_701e0d46679acb419062473876f60bd2.html", "dir_701e0d46679acb419062473876f60bd2" ],
     [ "heap", "dir_060f6c372516534283cc3c4251ff7e55.html", "dir_060f6c372516534283cc3c4251ff7e55" ],
