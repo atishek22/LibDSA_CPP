@@ -8,6 +8,10 @@ var namespaces_dup =
       [ "DECREASING_ORDER", "namespacelinear__sorting.html#a776e6b10ceb43a5bcc5457fe3941fb2e", null ],
       [ "INCREASING_ORDER", "namespacelinear__sorting.html#a8bd7cae790a76fb36323f39db4da911c", null ]
     ] ],
+    [ "probing", "namespaceprobing.html", [
+      [ "linear", "namespaceprobing.html#a6620ef9bd5ab6df57c49dbc3cf997210", null ],
+      [ "quadratic", "namespaceprobing.html#a1b6138dfe64415ec56828b58a738f9f9", null ]
+    ] ],
     [ "sorting", "namespacesorting.html", [
       [ "decreasingOrder", "namespacesorting.html#a4ef6c3a485f05a85ba7e2e6b5a9a5409", null ],
       [ "HEAP_DECREASING", "namespacesorting.html#a578a71d62cc3f443cd37865515db38ab", null ],

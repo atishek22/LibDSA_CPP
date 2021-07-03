@@ -8,4 +8,5 @@ add_library(
   ./queue/queue.cpp
   ./linked_list/linked_list.cpp
   ./hash_tables/hash_table.cpp
+  ./hash_tables/hash_table_open_addressing.cpp
   )

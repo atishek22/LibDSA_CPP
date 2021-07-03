@@ -26,6 +26,7 @@ var NAVTREE =
 [
   [ "LibDSA C++", "index.html", [
     [ "Todo List", "todo.html", null ],
+    [ "Bug List", "bug.html", null ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ],
       [ "Namespace Members", "namespacemembers.html", [

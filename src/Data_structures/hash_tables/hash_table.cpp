@@ -40,7 +40,7 @@ void HashTable<Key, Data>::_resize_table() {
         auto old_capacity = capacity;
         try {
             this->capacity *= 2;
-            resize_threshold = (size_t) load_factor * capacity;
+            resize_threshold = load_factor * capacity;
             LinkedList<Element>* new_table = new LinkedList<Element>[capacity];
             for(int i = 0; i < old_capacity; i++) {
                 while(!table[i].empty()) {
@@ -84,11 +84,11 @@ bool HashTable<Key, Data>::contains_key(Key key) noexcept {
 
 template<Hashable Key, typename Data>
 void HashTable<Key, Data>::insert(Key key, Data data) {
+    _resize_table();
     Element new_element = Element(key, data);
     auto index = get_normalised_index(key);
     table[index].add_first(new_element);
     _size++;
-    _resize_table();
 }
 
 template<Hashable Key, typename Data>

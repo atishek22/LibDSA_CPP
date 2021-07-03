@@ -69,13 +69,13 @@ public:
      * @details Creates an empty hash table with the specified \a loadFactor and \a capacity. Fall backs to the
      * default if not specified.
      * @param capacity Max capacity of the table - index range - \f$[0, capacity)\f$
-     * @param loadFactor \f$(\alpha)\f$  ratio the number of elements to the capacity - define the resize threshold for the table
+     * @param load_factor \f$(\alpha)\f$  ratio the number of elements to the capacity - define the resize threshold for the table
      * @tparam Key Hashable Key data type
      * @tparam Data Type of data to be stored by the table
      * @exception std::illegal_argument Invalid \a capacity or \a loadFactor
      * @exception std::runtime_error Unable to allocate the table
      */
-    HashTable(size_t capacity = DEFAULT_CAPACITY, float loadFactor = DEFAULT_LOAD_FACTOR);
+    HashTable(size_t capacity = DEFAULT_CAPACITY, float load_factor = DEFAULT_LOAD_FACTOR);
 
     /**@brief Default Destructor
      * @details Clears and deallocates the table.
@@ -91,6 +91,7 @@ public:
     }
 
     /**@brief Check if the table is empty
+     * @details \f$O(1)\f$
      * @return \b Boolean \b true if the table is empty
      */
     bool empty() noexcept {
@@ -98,7 +99,7 @@ public:
     }
 
     /**@brief Clear the table
-     * @details Removes all the elements and maintains the table size. \f$O(\alpha n)\f$
+     * @details Removes all the elements and maintains the table capacity. \f$O(\alpha n)\f$
      * @exception std::runtime_error Unable to clear the table.
      */
     void clear();
@@ -115,6 +116,8 @@ public:
      * @param key Key for the entry
      * @param data Data element of the entry
      * @exception std::runtime_error
+     * 
+     * @todo Check for duplicate keys and modify the value if key exists (Probably give an optional parameter to allow for duplicates)
      */
     void insert(Key key, Data data);
 

@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['max_5fheap_187',['MAX_HEAP',['../namespaceheap.html#a455af8cc8e14d11406f10addfebd0eca',1,'heap']]],
-  ['min_5fheap_188',['MIN_HEAP',['../namespaceheap.html#aa80593a95da8ebd387e3fb147822716f',1,'heap']]]
+  ['quadratic_230',['quadratic',['../namespaceprobing.html#a1b6138dfe64415ec56828b58a738f9f9',1,'probing']]]
 ];

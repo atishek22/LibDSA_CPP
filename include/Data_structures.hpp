@@ -23,4 +23,8 @@
 #include"../src/Data_structures/hash_tables/hash_table.hpp"
 #include"../src/Data_structures/hash_tables/hash_table.cpp"
 
+#include"../src/Data_structures/hash_tables/hash_table_open_addressing.hpp"
+#include"../src/Data_structures/hash_tables/hash_table_open_addressing.cpp"
+
+
 //#endif //DATA_STRUCTURES_DS_HPP
