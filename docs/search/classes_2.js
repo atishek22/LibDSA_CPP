@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['iterator_121',['Iterator',['../structHashTable_1_1Iterator.html',1,'HashTable&lt; Key, Data &gt;::Iterator'],['../structHashTableOA_1_1Iterator.html',1,'HashTableOA&lt; Key, Data &gt;::Iterator']]]
+  ['hashtable_121',['HashTable',['../classHashTable.html',1,'']]],
+  ['hashtableoa_122',['HashTableOA',['../classHashTableOA.html',1,'']]],
+  ['heap_123',['Heap',['../classHeap.html',1,'']]]
 ];
