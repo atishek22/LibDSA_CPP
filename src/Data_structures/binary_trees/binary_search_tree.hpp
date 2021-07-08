@@ -21,6 +21,30 @@
 template<Comparable Val>
 class BST {
 
+  const int NUM_CHILDREN = 2;
+  const int LEFT = 0;
+  const int RIGHT = 1;
+
+  class Node {
+    public:
+    Val data;
+    Node* child[NUM_CHILDREN];
+
+    Node(Val data, Node* left = nullptr, Node* right = nullptr) {
+      this->data = data;
+      child[LEFT] = left;
+      child[RIGHT] = right;
+    }
+
+    bool operator==(const Node& other) {
+      return this->data == other;
+    }
+
+    bool operator>(const Node& other) {
+      return this->data > other;
+    }
+  };
+
 };
 
 #endif //DATA_STRUCTURES_BINARY_SEARCH_TREE_HPP
